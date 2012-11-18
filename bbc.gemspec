@@ -8,19 +8,15 @@ spec = Gem::Specification.new do |s|
   s.homepage = 'http://www.bbc.co.uk'
   s.platform = Gem::Platform::RUBY
   s.summary = 'BBC weather and schedule data tool'
-  s.files = %w(
-bin/weather
-bin/tv
-bin/radio
-lib/weather/version.rb
-lib/weather.rb
-  )
+  s.files = Dir['**/*']
+  s.files.reject! { |fn| fn.match /\.(DS_Store|svn|git|tmproj|gem)|tmp/ }
   s.require_paths << 'lib'
   s.bindir = 'bin'
   s.executables << 'weather'
   s.executables << 'tv'
   s.executables << 'radio'
   s.add_development_dependency('rake')
+  s.add_development_dependency('rspec')
   s.add_development_dependency('rdoc')
   s.add_development_dependency('aruba')
   s.add_development_dependency('anticipate')
