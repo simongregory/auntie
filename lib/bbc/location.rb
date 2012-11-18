@@ -9,7 +9,7 @@ class Location
   def load
     begin
      raw = open(@url, 'UserAgent' => BBC::USER_AGENT).read
-     JSON.parse(raw)
+     data = JSON.parse(raw)
     rescue
       puts "Unable to download location data"
       exit
