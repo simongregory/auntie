@@ -18,7 +18,7 @@ A ruby gem for acessing [BBC]() data apis
 
     radio        # what is on Radio 1 today
     radio next   # what is on the wireless next
-    radio 6      # what is on Radio Six Music
+    radio six    # what is on Radio Six Music
 
 # zsh integration
 
