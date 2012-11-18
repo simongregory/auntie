@@ -1,70 +1,54 @@
 #!/usr/bin/env ruby
-require 'gli'
-require 'weather'
+require 'bbc'
 
-include GLI::App
+#program_desc 'BBC Radio schedules from now'
+#version BBC::VERSION
 
-program_desc 'BBC Radio schedules from now'
+channels = {
+  :one => { :id => 'radio1', :region => '/england' },
+  :onextra => { :id => '1xtra' },
+  :two => { :id => 'radio2' },
+  :three => { :id => 'radio3' },
+  :four => { :id => 'radio4', :region => '/fm' },
+  :fourextra => { :id => 'radio4extra' },
+  :five => { :id => '5live' },
+  :six => { :id => '6music' },
+  :asian => { :id => 'asiannetwork' },
+  :worldservice => { :id => 'worldserviceradio' }
+}
 
-version Weather::VERSION
+channel = ARGV[0] || :one
 
-def load station, region=''
-
-  url = "http://www.bbc.co.uk/#{station}/programmes/schedules#{region}.json"
-  raw = open(url, 'UserAgent' => Weather::USER_AGENT).read
-  data = JSON.parse(raw)
-
-  Schedule.new(data)
+if ARGV[0] == 'help' && ARGV[1] == '-c'
+  channels.each { |k,v| puts k }
+  puts "now\nnext"
+  exit
 end
 
-desc 'Show schedule for Radio 1'
-command :one do |c|
-  c.action { |g,o,a| load 'radio1', '/england' }
+if ['help', '-h', '--help'].include? ARGV[0]
+  puts 'Useage: radio <channel>'
+  exit
 end
 
-desc 'Show schedule for Radio 1 Xtra'
-command :onextra do |c|
-  c.action { |g,o,a| load '1xtra' }
+if ARGV[0] == 'now'
+  NowNext.new('radio').now
+  exit
 end
 
-desc 'Show schedule for Radio 2'
-command :two do |c|
-  c.action { |g,o,a| load 'radio2' }
+if ARGV[0] == 'next'
+  NowNext.new('radio').next
+  exit
 end
 
-desc 'Show schedule for Radio 3'
-command :three do |c|
-  c.action { |g,o,a| load 'radio3' }
-end
+if channels.has_key? channel.to_sym
 
-desc 'Show schedule for Radio 4'
-command :four do |c|
-  c.action { |g,o,a| load 'radio4', '/fm' }
-end
+  selection = channels[channel.to_sym]
 
-desc 'Show schedule for Radio 4 Extra'
-command :four do |c|
-  c.action { |g,o,a| load 'radio4extra' }
-end
+  if ['yesterday', 'today', 'tomorrow'].include? ARGV[1]
+    selection[:period] = '/'+ARGV[1]
+  end
 
-desc 'Show schedule for Radio 5 Live'
-command :five do |c|
-  c.action { |g,o,a| load '5live' }
+  Schedule.new selection
+else
+  puts "'#{channel}' is an unknown channel"
 end
-
-desc 'Show schedule for Radio 6 Music'
-command :six do |c|
-  c.action { |g,o,a| load '6music' }
-end
-
-desc 'Show schedule for Asian Network Radio'
-command :asian do |c|
-  c.action { |g,o,a| load 'asiannetwork' }
-end
-
-desc 'Show schedule for World Service Radio'
-command :ws do |c|
-  c.action { |g,o,a| load 'worldserviceradio' }
-end
-
-exit run(ARGV)

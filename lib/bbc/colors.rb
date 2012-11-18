@@ -6,21 +6,29 @@ def paint txt, color
 end
 
 def green txt
-  paint txt, '32'
+  paint txt, 32
 end
 
 def red txt
-  paint txt, '31'
+  paint txt, 31
 end
 
 def light_green txt
-  paint txt, '92'
+  paint txt, 92
 end
 
 def yellow txt
-  paint txt, '33'
+  paint txt, 33
 end
 
 def cyan txt
   paint txt, 36
+end
+
+def blue txt
+  paint txt, 34
+end
+
+def white txt
+  paint txt, 37
 end

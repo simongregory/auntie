@@ -1,25 +1,46 @@
 #!/usr/bin/env ruby
 
-require 'weather'
+require 'bbc'
 
-service = ARGV[0] ||= 'one'
-
-base = 'http://www.bbc.co.uk'
-schedules = {
-  'one' => "#{base}/bbcone/programmes/schedules/london.json",
-  'two' => "#{base}/bbctwo/programmes/schedules/england.json",
-  'three' => "#{base}/bbcthree/programmes/schedules.json",
-  'four' => "#{base}/bbcfour/programmes/schedules.json",
-  'cbeebies' => "#{base}/cbeebies/programmes/schedules.json",
-  'cbbc' => "#{base}/cbbc/programmes/schedules.json",
-  'hd' => "#{base}/bbchd/programmes/schedules.json",
-  'news' => "#{base}/bbcnews/programmes/schedules.json",
-  'parliament' => "#{base}/parliament/programmes/schedules.json",
+channels = {
+  :one => { :id => 'bbcone', :region => '/london' },
+  :two => { :id => 'bbctwo', :region => '/england' },
+  :three => { :id => 'bbcthree' },
+  :four => { :id => 'bbcfour' },
+  :cbeebies => { :id => 'cbeebies' },
+  :cbbc => { :id => 'cbbc' },
+  :hd => { :id => 'bbchd' },
+  :news => { :id => 'bbcnews' },
+  :parliament => { :id => 'parliament' },
 }
 
-search = schedules[service]
+channel = ARGV[0] || :one
 
-raw = open(search, 'UserAgent' => Weather::USER_AGENT).read
-data = JSON.parse(raw)
+if ARGV[0] == 'help' && ARGV[1] == '-c'
+  channels.each { |k,v| puts k }
+  puts "now\nnext"
+  exit
+end
 
-Schedule.new(data)
+helps = ['help', '-h', '--help']
+
+if helps.include? ARGV[0]
+  puts 'Useage: tv <channel>'
+  exit
+end
+
+if ARGV[0] == 'now'
+  NowNext.new('tv').now
+  exit
+end
+
+if ARGV[0] == 'next'
+  NowNext.new('tv').next
+  exit
+end
+
+if channels.has_key? channel.to_sym
+  Schedule.new channels[channel.to_sym]
+else
+  puts "'#{channel}' is an unknown channel"
+end

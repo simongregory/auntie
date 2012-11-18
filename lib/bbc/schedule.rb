@@ -1,9 +1,26 @@
+# Helpful urls
+#
+# http://www.bbc.co.uk/programmes/developers
+# http://www.bbc.co.uk/ontologies/programmes/2009-09-07.shtml
+
 class Schedule
-  def initialize(data)
-    service_details data
+  def initialize(channel)
+    load channel
   end
 
-  def service_details data
+  def load channel
+    station = channel[:id]
+    region = channel[:region] ||= ''
+    period = channel[:period] ||= ''
+
+    url = "http://www.bbc.co.uk/#{station}/programmes/schedules#{region}#{period}.json"
+    raw = open(url, 'UserAgent' => 'bbc-programmes-cli-v0.1.0').read
+    data = JSON.parse(raw)
+
+    list data
+  end
+
+  def list data
     now = Time.new
 
     data['schedule']['day']['broadcasts'].each do |e|
@@ -17,11 +34,12 @@ class Schedule
 
       starts = Time.parse(e['start'])
 
-      starts_at = starts.strftime("%I:%M%P")
+      starts_at = starts.strftime("%H:%M")
+      #starts_at = starts.strftime("%I:%M%P")
       desc = "#{starts_at} #{title}"
 
       if (starts < now) && (ends > now)
-        desc = red desc
+        desc = light_green desc
       end
 
       puts desc
