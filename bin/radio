@@ -1,0 +1,70 @@
+#!/usr/bin/env ruby
+require 'gli'
+require 'weather'
+
+include GLI::App
+
+program_desc 'BBC Radio schedules from now'
+
+version Weather::VERSION
+
+def load station, region=''
+
+  url = "http://www.bbc.co.uk/#{station}/programmes/schedules#{region}.json"
+  raw = open(url, 'UserAgent' => Weather::USER_AGENT).read
+  data = JSON.parse(raw)
+
+  Schedule.new(data)
+end
+
+desc 'Show schedule for Radio 1'
+command :one do |c|
+  c.action { |g,o,a| load 'radio1', '/england' }
+end
+
+desc 'Show schedule for Radio 1 Xtra'
+command :onextra do |c|
+  c.action { |g,o,a| load '1xtra' }
+end
+
+desc 'Show schedule for Radio 2'
+command :two do |c|
+  c.action { |g,o,a| load 'radio2' }
+end
+
+desc 'Show schedule for Radio 3'
+command :three do |c|
+  c.action { |g,o,a| load 'radio3' }
+end
+
+desc 'Show schedule for Radio 4'
+command :four do |c|
+  c.action { |g,o,a| load 'radio4', '/fm' }
+end
+
+desc 'Show schedule for Radio 4 Extra'
+command :four do |c|
+  c.action { |g,o,a| load 'radio4extra' }
+end
+
+desc 'Show schedule for Radio 5 Live'
+command :five do |c|
+  c.action { |g,o,a| load '5live' }
+end
+
+desc 'Show schedule for Radio 6 Music'
+command :six do |c|
+  c.action { |g,o,a| load '6music' }
+end
+
+desc 'Show schedule for Asian Network Radio'
+command :asian do |c|
+  c.action { |g,o,a| load 'asiannetwork' }
+end
+
+desc 'Show schedule for World Service Radio'
+command :ws do |c|
+  c.action { |g,o,a| load 'worldserviceradio' }
+end
+
+exit run(ARGV)

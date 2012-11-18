@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'weather'
+
+service = ARGV[0] ||= 'one'
+
+base = 'http://www.bbc.co.uk'
+schedules = {
+  'one' => "#{base}/bbcone/programmes/schedules/london.json",
+  'two' => "#{base}/bbctwo/programmes/schedules/england.json",
+  'three' => "#{base}/bbcthree/programmes/schedules.json",
+  'four' => "#{base}/bbcfour/programmes/schedules.json",
+  'cbeebies' => "#{base}/cbeebies/programmes/schedules.json",
+  'cbbc' => "#{base}/cbbc/programmes/schedules.json",
+  'hd' => "#{base}/bbchd/programmes/schedules.json",
+  'news' => "#{base}/bbcnews/programmes/schedules.json",
+  'parliament' => "#{base}/parliament/programmes/schedules.json",
+}
+
+search = schedules[service]
+
+raw = open(search, 'UserAgent' => Weather::USER_AGENT).read
+data = JSON.parse(raw)
+
+Schedule.new(data)
