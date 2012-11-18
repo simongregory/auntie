@@ -14,7 +14,8 @@ if ['help', '-h', '--help'].include? ARGV[0]
 end
 
 if ARGV[0] == 'loc'
-
+  Location.new(ARGV[1])
+  exit
 end
 
 location = ARGV[0] ||= '2643743' #'2643743' #Default to London. UK postcodes also work
