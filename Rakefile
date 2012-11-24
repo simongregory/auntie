@@ -19,4 +19,6 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.rspec_opts = %w[--color]
 end
 
+task :t => [:spec]
+
 task :default => [:spec, :features]
