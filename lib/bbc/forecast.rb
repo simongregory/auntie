@@ -6,24 +6,25 @@ class Forecast
   def hourly
     feed = load("#{base_url}/3hourlyforecast.json")
 
-    puts "Hourly weather for " + feed['forecastContent']['location']['locationName']
+    location = feed['forecastContent']['location']['locationName']
+
+    puts "Hourly weather for #{location}\n"
+    puts "Day        Time    Weather           Max#{degrees_c} Wind"
 
     feed['forecastContent']['forecasts'].each { |e|
-      day = sprintf "%-10s", e['dayName']
 
-      time = sprintf "%-7s", e['timeSlot']
+      day = e['dayName'].ljust(10)
+      time = e['timeSlot'].ljust(7)
+      desc = e['weatherType'].ljust(17)
 
-      desc = sprintf "%-17s", e['weatherType']
-
-      temp = e['temperature']['centigrade'].to_s
-      temp = sprintf "%-6s", "#{temp}\xC2\xB0C" unless temp.nil?
+      temp = e['temperature']['centigrade'].to_s || '?'
+      temp = "#{temp}#{degrees_c}".ljust(6)
 
       wind = e['wind']['directionDesc']
-      wind_spd = e['wind']['windspeed']['mph']
-      wind_spd = "#{wind_spd}mph" unless wind_spd.nil?
-      wind_desc = sprintf "%-6s %-20s", wind_spd, wind
+      wind_spd = e['wind']['windspeed']['mph'] || '?'
+      wind_spd = "#{wind_spd}mph".ljust(6)
 
-      puts "#{yellow day} #{time} #{desc} #{temp} #{wind_desc}"
+      puts "#{yellow day} #{time} #{desc} #{temp} #{wind_spd} #{wind}"
     }
   end
 
@@ -70,5 +71,10 @@ class Forecast
       exit
     end
   end
+
+  def degrees_c
+    "\xC2\xB0C" #Shell escaped °C
+  end
+
 
 end
