@@ -1,14 +1,17 @@
 class Location
   def initialize(term)
     abort "Please use a longer search term" if term.length < 3
-    @url = "http://www.bbc.co.uk/locator/default/en-GB/autocomplete.json?search=" + term + "&filter=domestic&ptrt=/"
 
-    load
+    load url(term)
   end
 
-  def load
+  def url(term)
+    "http://www.bbc.co.uk/locator/default/en-GB/autocomplete.json?search=#{term}&filter=domestic&ptrt=/"
+  end
+
+  def load(uri)
     begin
-     raw = open(@url, 'UserAgent' => BBC::USER_AGENT).read
+     raw = open(uri, 'UserAgent' => BBC::USER_AGENT).read
      data = JSON.parse(raw)
     rescue
       puts "Unable to download location data"
