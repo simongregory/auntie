@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bbc-ruby-api (0.1.0)
+    bbc-cli (0.1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -43,7 +43,7 @@ PLATFORMS
 DEPENDENCIES
   anticipate
   aruba
-  bbc-ruby-api!
+  bbc-cli!
   rake
   rdoc
   rspec

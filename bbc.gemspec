@@ -16,6 +16,8 @@ spec = Gem::Specification.new do |s|
   s.executables << 'weather'
   s.executables << 'tv'
   s.executables << 'radio'
+  s.executables << 'news'
+  s.executables << 'sport'
   s.add_development_dependency('rake')
   s.add_development_dependency('rspec')
   s.add_development_dependency('rdoc')
