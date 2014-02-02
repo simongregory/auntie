@@ -1,3 +1,4 @@
 excludeInFileChooser = "{$excludeInFileChooser,tmp}"
 excludeInBrowser = "{$excludeInBrowser,tmp}"
 excludeInFolderSearch = "{$excludeInFolderSearch,tmp}"
+includeInFileChooser = "{$includeInFileChooser,.gitignore}"
