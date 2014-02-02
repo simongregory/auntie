@@ -4,7 +4,7 @@ PATH
     bbc-cli (0.1.0)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     anticipate (0.0.2)
     aruba (0.5.0)
