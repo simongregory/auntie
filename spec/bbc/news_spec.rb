@@ -15,16 +15,16 @@ describe News do
   end
 
   it "shows the latest headlines" do
+    @news.stub(:console_columns).and_return(120)
     @news.stub_chain(:open, :read) { fixture 'news.json' }
     @news.load
 
     expect( @io.string ).to start_with 'BBC News Headlines'
     expect( @io.string ).to include "Police say Moscow school gunman has been 'neutralised'"
-    expect( @io.string ).to end_with "It puts the loss down to cheaper fares and weaker sterling.\n"
   end
 
   it "explains when it fails" do
-    @news.stub_chain(:open, :read) { 'corrupt { json' }
+    @news.stub_chain(:open, :read).and_return('corrupt { json')
 
     begin
       @news.load
@@ -38,6 +38,11 @@ describe News do
   end
 
   it "truncates output to the size of the shell" do
-    #
+    @news.stub(:console_columns).and_return(80)
+    @news.stub_chain(:open, :read) { fixture 'news.json' }
+
+    @news.load
+
+    expect( @io.string ).to end_with "in the last quarter. It put\n"
   end
 end

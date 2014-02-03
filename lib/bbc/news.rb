@@ -6,8 +6,7 @@ class News
   end
 
   def load
-    cols = `stty size`.split(' ')[1].to_i
-
+    cols = console_columns
     @io.puts 'BBC News Headlines'
     data['entries'].each { |news_item|
       @io.puts news_item['headline'][0..cols-1]
@@ -24,5 +23,9 @@ class News
       @io.puts "Unable to download news"
       exit
     end
+  end
+
+  def console_columns
+    IO.console.winsize[1]
   end
 end

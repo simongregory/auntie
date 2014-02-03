@@ -1,7 +1,8 @@
 # encoding: utf-8
 
-require 'open-uri'
+require 'io/console'
 require 'json'
+require 'open-uri'
 
 require 'bbc/shell/colors'
 require 'bbc/shell/describe_time'
