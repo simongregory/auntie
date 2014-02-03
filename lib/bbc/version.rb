@@ -1,5 +1,7 @@
-module BBC
+# encoding: utf-8
+
+module AUNTIE
   VERSION = '0.1.0'
-  NAME = 'bbc-command-line-interface'
+  NAME = 'auntie'
   USER_AGENT = "#{NAME}-#{VERSION}"
 end

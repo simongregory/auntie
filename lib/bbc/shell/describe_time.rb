@@ -1,5 +1,7 @@
-def how_long_until time
-  a = (time-Time.now).to_i
+# encoding: utf-8
+
+def how_long_between past, future
+  a = (future-past).to_i
 
   case a
     when -10000000..0 then "On now"

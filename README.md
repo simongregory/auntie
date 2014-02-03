@@ -1,12 +1,10 @@
-# bbc
+# Auntie
 
-A ruby gem for acessing [BBC]() data apis
+A Ruby Gem for accessing [BBC]() weather, tv, radio, news and sport feeds.
 
 # Install
 
-    git clone <this repo>
-    gem build bbc.gemspec
-    gem install bbc-0.1.0.gem
+    gem install auntie
 
 # Use
 
@@ -19,6 +17,10 @@ A ruby gem for acessing [BBC]() data apis
     radio        # what is on Radio 1 today
     radio next   # what is on the wireless next
     radio six    # what is on Radio Six Music
+    
+    news         # the latest news headlines
+    
+    sport        # the latest sport headlines
 
 # zsh integration
 
@@ -31,6 +33,7 @@ and source it via your .zshrc file. The same can be done for the `tv` and `weath
 
 # Licence
 
-Please see accompanying LICENSE document.
+[MIT][], see accomanying [LICENSE](LICENSE) document
 
 [BBC]: http://www.bbc.co.uk/
+[MIT]: http://opensource.org/licenses/MIT

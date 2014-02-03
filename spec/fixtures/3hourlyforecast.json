@@ -1,0 +1,265 @@
+{
+    "forecastContent": {
+        "forecasts": [
+            {
+                "dayName": "Saturday",
+                "dayNameAbbreviation": "Sat",
+                "humidityPercent": 92,
+                "localDate": "2012-11-24",
+                "pressureMillibars": 1005,
+                "temperature": {
+                    "centigrade": 9,
+                    "fahrenheit": 48
+                },
+                "timeSlot": "18:00",
+                "timeZone": "+00:00",
+                "visibility": "Moderate",
+                "weatherCode": 15,
+                "weatherSymbol": {
+                    "mobile": "15.gif",
+                    "webMedium": "15.gif",
+                    "webSmall": "15.gif"
+                },
+                "weatherType": "Heavy Rain",
+                "wind": {
+                    "direction": "ESE",
+                    "directionDesc": "East South Easterly",
+                    "iconGrey": "ESE.png",
+                    "iconWhite": "ESE.png",
+                    "windspeed": {
+                        "kph": 19,
+                        "mph": 12
+                    }
+                }
+            },
+            {
+                "dayName": "Saturday",
+                "dayNameAbbreviation": "Sat",
+                "humidityPercent": 94,
+                "localDate": "2012-11-24",
+                "pressureMillibars": 999,
+                "temperature": {
+                    "centigrade": 9,
+                    "fahrenheit": 48
+                },
+                "timeSlot": "21:00",
+                "timeZone": "+00:00",
+                "visibility": "Moderate",
+                "weatherCode": 15,
+                "weatherSymbol": {
+                    "mobile": "15.gif",
+                    "webMedium": "15.gif",
+                    "webSmall": "15.gif"
+                },
+                "weatherType": "Heavy Rain",
+                "wind": {
+                    "direction": "ESE",
+                    "directionDesc": "East South Easterly",
+                    "iconGrey": "ESE.png",
+                    "iconWhite": "ESE.png",
+                    "windspeed": {
+                        "kph": 21,
+                        "mph": 13
+                    }
+                }
+            },
+            {
+                "dayName": "Sunday",
+                "dayNameAbbreviation": "Sun",
+                "humidityPercent": 93,
+                "localDate": "2012-11-25",
+                "pressureMillibars": 992,
+                "temperature": {
+                    "centigrade": 11,
+                    "fahrenheit": 52
+                },
+                "timeSlot": "00:00",
+                "timeZone": "+00:00",
+                "visibility": "Moderate",
+                "weatherCode": 15,
+                "weatherSymbol": {
+                    "mobile": "15.gif",
+                    "webMedium": "15.gif",
+                    "webSmall": "15.gif"
+                },
+                "weatherType": "Heavy Rain",
+                "wind": {
+                    "direction": "SSE",
+                    "directionDesc": "South South Easterly",
+                    "iconGrey": "SSE.png",
+                    "iconWhite": "SSE.png",
+                    "windspeed": {
+                        "kph": 23,
+                        "mph": 14
+                    }
+                }
+            },
+            {
+                "dayName": "Sunday",
+                "dayNameAbbreviation": "Sun",
+                "humidityPercent": 87,
+                "localDate": "2012-11-25",
+                "pressureMillibars": 990,
+                "temperature": {
+                    "centigrade": 10,
+                    "fahrenheit": 50
+                },
+                "timeSlot": "03:00",
+                "timeZone": "+00:00",
+                "visibility": "Excellent",
+                "weatherCode": 7,
+                "weatherSymbol": {
+                    "mobile": "7.gif",
+                    "webMedium": "7.gif",
+                    "webSmall": "7.gif"
+                },
+                "weatherType": "White Cloud",
+                "wind": {
+                    "direction": "SW",
+                    "directionDesc": "South Westerly",
+                    "iconGrey": "SW.png",
+                    "iconWhite": "SW.png",
+                    "windspeed": {
+                        "kph": 40,
+                        "mph": 25
+                    }
+                }
+            },
+            {
+                "dayName": "Sunday",
+                "dayNameAbbreviation": "Sun",
+                "humidityPercent": 83,
+                "localDate": "2012-11-25",
+                "pressureMillibars": 998,
+                "temperature": {
+                    "centigrade": 9,
+                    "fahrenheit": 48
+                },
+                "timeSlot": "06:00",
+                "timeZone": "+00:00",
+                "visibility": "Very Good",
+                "weatherCode": 12,
+                "weatherSymbol": {
+                    "mobile": "12.gif",
+                    "webMedium": "12.gif",
+                    "webSmall": "12.gif"
+                },
+                "weatherType": "Light Rain",
+                "wind": {
+                    "direction": "WSW",
+                    "directionDesc": "West South Westerly",
+                    "iconGrey": "WSW.png",
+                    "iconWhite": "WSW.png",
+                    "windspeed": {
+                        "kph": 39,
+                        "mph": 24
+                    }
+                }
+            },
+            {
+                "dayName": "Sunday",
+                "dayNameAbbreviation": "Sun",
+                "humidityPercent": 73,
+                "localDate": "2012-11-25",
+                "pressureMillibars": 1005,
+                "temperature": {
+                    "centigrade": 7,
+                    "fahrenheit": 45
+                },
+                "timeSlot": "09:00",
+                "timeZone": "+00:00",
+                "visibility": "Very Good",
+                "weatherCode": 1,
+                "weatherSymbol": {
+                    "mobile": "1.gif",
+                    "webMedium": "1.gif",
+                    "webSmall": "1.gif"
+                },
+                "weatherType": "Sunny",
+                "wind": {
+                    "direction": "WSW",
+                    "directionDesc": "West South Westerly",
+                    "iconGrey": "WSW.png",
+                    "iconWhite": "WSW.png",
+                    "windspeed": {
+                        "kph": 31,
+                        "mph": 19
+                    }
+                }
+            },
+            {
+                "dayName": "Sunday",
+                "dayNameAbbreviation": "Sun",
+                "humidityPercent": 73,
+                "localDate": "2012-11-25",
+                "pressureMillibars": 1007,
+                "temperature": {
+                    "centigrade": 9,
+                    "fahrenheit": 48
+                },
+                "timeSlot": "12:00",
+                "timeZone": "+00:00",
+                "visibility": "Good",
+                "weatherCode": 1,
+                "weatherSymbol": {
+                    "mobile": "1.gif",
+                    "webMedium": "1.gif",
+                    "webSmall": "1.gif"
+                },
+                "weatherType": "Sunny",
+                "wind": {
+                    "direction": "SW",
+                    "directionDesc": "South Westerly",
+                    "iconGrey": "SW.png",
+                    "iconWhite": "SW.png",
+                    "windspeed": {
+                        "kph": 21,
+                        "mph": 13
+                    }
+                }
+            },
+            {
+                "dayName": "Sunday",
+                "dayNameAbbreviation": "Sun",
+                "humidityPercent": 74,
+                "localDate": "2012-11-25",
+                "pressureMillibars": 1007,
+                "temperature": {
+                    "centigrade": -10,
+                    "fahrenheit": 50
+                },
+                "timeSlot": "15:00",
+                "timeZone": "+00:00",
+                "visibility": "Good",
+                "weatherCode": 1,
+                "weatherSymbol": {
+                    "mobile": "1.gif",
+                    "webMedium": "1.gif",
+                    "webSmall": "1.gif"
+                },
+                "weatherType": "Sunny",
+                "wind": {
+                    "direction": "SW",
+                    "directionDesc": "South Westerly",
+                    "iconGrey": "SW.png",
+                    "iconWhite": "SW.png",
+                    "windspeed": {
+                        "kph": 14,
+                        "mph": 9
+                    }
+                }
+            }
+        ],
+        "location": {
+            "continent": null,
+            "country": "United Kingdom",
+            "county": null,
+            "id": "se1",
+            "latitude": "51.5103",
+            "locationName": "SE1",
+            "longitude": "-0.0969",
+            "state": null,
+            "timezoneName": "Europe/London"
+        }
+    }
+}

@@ -1,23 +1,62 @@
+# encoding: utf-8
+
 class NowNext
-  def initialize(medium)
-    @fmt = (medium == 'tv') ? "%-18s %s" : "%-32s %s"
-    url = "http://www.bbc.co.uk/iplayer/ion/multinownext/service_type/#{medium}/simulcast_only/1/format/json"
-    raw = open(url, 'UserAgent' => 'bbc-programmes-cli-v0.1.0').read
-    @data = JSON.parse(raw)
+  def initialize(io=STDIN)
+    @io = io
   end
 
-  def now
+  def tv_now
+    @fmt = "%-18s %s"
+    load 'tv'
+
+    on_now
+  end
+
+  def tv_next
+    @fmt = "%-18s %s"
+    load 'tv'
+
+    on_next
+  end
+
+  def radio_now
+    @fmt = "%-32s %s"
+    load 'radio'
+
+    on_now
+  end
+
+  def radio_next
+    @fmt = "%-32s %s"
+    load 'radio'
+
+    on_next
+  end
+
+  private
+
+  Programme = Struct.new(:channel, :title, :starts, :starts_in)
+
+  def load medium
+    begin
+     raw = open("http://www.bbc.co.uk/iplayer/ion/multinownext/service_type/#{medium}/simulcast_only/1/format/json", 'UserAgent' => AUNTIE::USER_AGENT).read
+     @data = JSON.parse(raw)
+    rescue
+      @io.puts "Unable to download #{medium} schedules"
+      exit
+    end
+  end
+
+  def on_now
     @data['blocklist'].each { |e|
       channel = format_channel e['title']
       programme = e['now'][0]['episode']['passionsite_title'] rescue next
 
-      puts sprintf @fmt, channel, programme
+      @io.puts sprintf @fmt, channel, programme
     }
   end
 
-  Programme = Struct.new(:channel, :title, :starts, :starts_in)
-
-  def next
+  def on_next
     programmes = []
 
     first = 9
@@ -31,7 +70,7 @@ class NowNext
       p.starts = Time.parse(e['next'][0]['start_time_iso']) rescue ''
 
       #next_start = starts.strftime("%H:%M")
-      p.starts_in = how_long_until(p.starts)
+      p.starts_in = how_long_between(time_now, p.starts)
 
       second = p.channel.length+3 if p.channel.length > second
 
@@ -40,13 +79,15 @@ class NowNext
 
     programmes.sort_by! { |p| p.starts }
 
-    programmes.each { |p|  puts sprintf "%-#{first}s %-#{second}s %s", p.starts_in, p.channel, p.title }
+    programmes.each { |p|  @io.puts sprintf "%-#{first}s %-#{second}s %s", p.starts_in, p.channel, p.title }
 
   end
 
-  private
-
   def format_channel name
     name.gsub(/^BBC | (London|England|Channel)/,'')
+  end
+
+  def time_now
+    Time.now
   end
 end

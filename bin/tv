@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
-
-require 'bbc'
+require 'auntie'
 
 channels = {
   :one => { :id => 'bbcone', :region => '/london' },
@@ -9,9 +8,9 @@ channels = {
   :four => { :id => 'bbcfour' },
   :cbeebies => { :id => 'cbeebies' },
   :cbbc => { :id => 'cbbc' },
-  :hd => { :id => 'bbchd' },
   :news => { :id => 'bbcnews' },
   :parliament => { :id => 'parliament' },
+  :alba => { :id => 'alba', }
 }
 
 channel = ARGV[0] || :one
@@ -30,17 +29,17 @@ if helps.include? ARGV[0]
 end
 
 if ARGV[0] == 'now'
-  NowNext.new('tv').now
+  NowNext.new.tv_now
   exit
 end
 
 if ARGV[0] == 'next'
-  NowNext.new('tv').next
+  NowNext.new.tv_next
   exit
 end
 
 if channels.has_key? channel.to_sym
-  Schedule.new channels[channel.to_sym]
+  Schedule.new.load channels[channel.to_sym]
 else
   puts "'#{channel}' is an unknown channel"
 end

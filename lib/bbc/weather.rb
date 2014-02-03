@@ -1,6 +1,13 @@
-class Forecast
-  def initialize(location)
-    @location = location
+# encoding: utf-8
+
+class Weather
+  include ShellCharacters
+
+  attr_reader :base_url
+
+  def initialize(location, io=STDOUT)
+    @io = io
+    @base_url = "http://open.live.bbc.co.uk/weather/feeds/en/#{location}"
   end
 
   def hourly
@@ -8,28 +15,40 @@ class Forecast
 
     location = feed['forecastContent']['location']['locationName']
 
-    puts "Hourly weather for #{location}\n"
-    puts "Day        Time    Weather           Max#{degrees_c} Wind"
+    @io.puts "\nThe next 24 hours in #{location}\n\n"
+    @io.puts "Day        Time    Weather            Max#{degrees_c}    Wind"
 
     feed['forecastContent']['forecasts'].each { |e|
 
       day = e['dayName'].ljust(10)
       time = e['timeSlot'].ljust(7)
-      desc = e['weatherType'].ljust(17)
+      desc = e['weatherType'].ljust(19)
 
       temp = e['temperature']['centigrade'].to_s || '?'
       temp = "#{temp}#{degrees_c}".ljust(6)
 
       wind = e['wind']['directionDesc']
+      wind_dir = e['wind']['direction']
       wind_spd = e['wind']['windspeed']['mph'] || '?'
-      wind_spd = "#{wind_spd}mph".ljust(6)
+      wind_spd = "#{wind_spd}mph".ljust(5)
 
-      puts "#{yellow day} #{time} #{desc} #{temp} #{wind_spd} #{wind}"
+      #visibility = e['visibility']
+      #millibars = e['pressureMillibars']
+      #humidity = e['humidityPercent']
+      #temp_colour = temp_to_color(temp.to_i)
+
+      @io.puts "#{yellow day} #{time} #{desc} #{temp} #{wind_spd} #{wind}"
     }
+    @io.puts "\n"
   end
 
   def daily
     feed = load("#{base_url}/3dayforecast.json")
+
+    location = feed['forecastContent']['location']['locationName']
+
+    @io.puts "\nThe next 3 days in #{location}\n\n"
+    @io.puts "Day        Time    Weather            Max#{degrees_c}    Wind"
 
     feed['forecastContent']['forecasts'].each { |e|
       day = sprintf "%-10s", e['dayName']
@@ -52,29 +71,28 @@ class Forecast
 
       night_desc = sprintf "%-12s %-3s", n_weather, n_temp
 
-      puts "#{yellow day} #{day_desc} #{cyan 'night'} #{white night_desc}"
+      @io.puts "#{yellow day} #{day_desc} #{cyan 'night'} #{white night_desc}"
     }
   end
 
   private
 
-  def base_url
-    "http://open.live.bbc.co.uk/weather/feeds/en/#{@location}"
-  end
-
   def load(url)
     begin
-     raw = open(url, 'UserAgent' => BBC::USER_AGENT).read
+     raw = open(url, 'UserAgent' => AUNTIE::USER_AGENT).read
      JSON.parse(raw)
     rescue
-      puts "Unable to download weather"
+      @io.puts "Unable to download the weather"
       exit
     end
   end
 
-  def degrees_c
-    "\xC2\xB0C" #Shell escaped °C
-  end
-
+  #def temp_to_color(temp)
+  #  case temp
+  #  when -100..0 then blue(square_block)
+  #  when 0..10 then yellow(square_block)
+  #  else red(square_block)
+  #  end
+  #end
 
 end

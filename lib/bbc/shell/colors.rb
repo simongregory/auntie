@@ -1,5 +1,10 @@
+# encoding: utf-8
+
 # Useful list of colour codes
 # http://misc.flogisoft.com/bash/tip_colors_and_formatting
+
+# And alternatives
+# http://stackoverflow.com/questions/1108767/terminal-color-in-ruby
 
 def paint txt, color
   "\033[#{color}m#{txt}\033[0m"

@@ -1,0 +1,31 @@
+{
+    "entries": [
+        {
+            "headline": "Police say Moscow school gunman has been 'neutralised' after he reportedly killed a teacher and a policeman ",
+            "isBreaking": "false",
+            "isLive": "false",
+            "mediaType": "Standard",
+            "prompt": "LATEST",
+            "url": "http://www.bbc.co.uk/news/world-europe-26014836"
+        },
+        {
+            "headline": "Lloyds Banking Group sets aside another \u00a31.8bn to cover PPI mis-selling compensation claims",
+            "isBreaking": "false",
+            "isLive": "false",
+            "mediaType": "Standard",
+            "prompt": "LATEST",
+            "url": "http://www.bbc.co.uk/news/uk-26013427"
+        },
+        {
+            "headline": "Airline Ryanair's latest results show it lost \u00a328.7m in the last quarter. It puts the loss down to cheaper fares and weaker sterling.",
+            "isBreaking": "false",
+            "isLive": "false",
+            "mediaType": "Standard",
+            "prompt": "LATEST",
+            "url": "http://www.bbc.co.uk/news/business-26013111"
+        }
+    ],
+    "name": "ticker",
+    "published": "",
+    "version": "0.1"
+}

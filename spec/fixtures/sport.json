@@ -1,0 +1,38 @@
+{
+    "entries": [
+        {
+            "headline": "Norwegian slopestyle snowboarder Torstein Horgmo, a Sochi 2014 medal favourite, in hospital after training crash",
+            "isBreaking": "false",
+            "isLive": "false",
+            "mediaType": "Standard",
+            "prompt": "WINTER OLYMPICS"
+        },
+        {
+            "headline": "Leeds boss Brian McDermott will report as normal at the club's training ground on Monday despite appearing to be sacked on Friday",
+            "isBreaking": "false",
+            "isLive": "false",
+            "mediaType": "Standard",
+            "prompt": "FOOTBALL",
+            "url": "http://www.bbc.co.uk/sport/0/football/26014775"
+        },
+        {
+            "headline": "British Olympic gold medallist Zac Purchase announces his retirement from professional rowing",
+            "isBreaking": "false",
+            "isLive": "false",
+            "mediaType": "Standard",
+            "prompt": "ROWING",
+            "url": "http://www.bbc.co.uk/sport/0/rowing/26011763"
+        },
+        {
+            "headline": "The Seattle Seahawks thrash the Denver Broncos 43-8 in Super Bowl XLVIII to win their first NFL title",
+            "isBreaking": "false",
+            "isLive": "false",
+            "mediaType": "Standard",
+            "prompt": "AMERICAN FOOTBALL",
+            "url": "http://www.bbc.co.uk/sport/0/american-football/26011983"
+        }
+    ],
+    "name": "ticker",
+    "published": "",
+    "version": "0.1"
+}

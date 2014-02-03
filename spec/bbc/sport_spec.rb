@@ -2,9 +2,34 @@
 
 require File.join(File.dirname(__FILE__), "/../spec_helper")
 
-describe Sport, "when first created" do
-  it "should be Sport" do
-    forecast = Sport.new
-    forecast.is_a?(Sport).should == true
+describe Sport do
+  before(:each) do
+    @io = StringIO.new
+    @sport = Sport.new(@io)
+  end
+
+  after(:each) do
+    @sport = nil
+    @io = nil
+  end
+
+  it "shows the latest headlines" do
+    @sport.stub_chain(:open, :read) { fixture 'sport.json' }
+    @sport.headlines
+
+    expect( @io.string ).to include 'Winter olympics'
+    expect( @io.string ).to include "Leeds boss"
+    expect( @io.string ).to include "American football"
+  end
+
+  it "explains when it fails" do
+    @sport.stub_chain(:open, :read) { 'corrupt { json' }
+
+    begin
+      @sport.headlines
+    rescue SystemExit
+    end
+
+    expect(@io.string).to end_with "Unable to download sport\n"
   end
 end

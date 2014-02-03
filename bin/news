@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require 'bbc'
+require 'auntie'
 
-News.new
+News.new.load

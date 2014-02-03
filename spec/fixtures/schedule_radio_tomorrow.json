@@ -1,0 +1,941 @@
+{
+    "schedule": {
+        "day": {
+            "broadcasts": [
+                {
+                    "duration": 3600,
+                    "end": "2014-02-04T01:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": true,
+                    "pid": "p01qlx6z",
+                    "programme": {
+                        "actual_start": "2014-02-02T03:47:08Z",
+                        "available_until": "2014-02-09T03:02:00Z",
+                        "display_titles": {
+                            "subtitle": "The New Music Playlist",
+                            "title": "6 Music Recommends"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-02T02:00:00Z",
+                        "image": {
+                            "pid": "p01lzjzm"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T03:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8jl3",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-10T01:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rz79k",
+                            "position": null,
+                            "title": "6 Music Recommends",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "New music in one handy bitesize programme.",
+                        "title": "The New Music Playlist",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T00:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-04T02:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qlx72",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Young, Loud and Snotty",
+                            "title": "The Story of Pop"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2011-02-02T03:00:00Z",
+                        "image": {
+                            "pid": "p01l68ky"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b00y3z69",
+                        "position": 30,
+                        "programme": {
+                            "expected_child_count": 52,
+                            "first_broadcast_date": "2011-01-04T03:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00xp4rp",
+                            "position": null,
+                            "title": "The Story of Pop",
+                            "type": "series"
+                        },
+                        "short_synopsis": "Alan Freeman charts the rise and fall of the ultimate punk band - The Sex Pistols.",
+                        "title": "Young, Loud and Snotty",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T01:00:00Z"
+                },
+                {
+                    "duration": 1800,
+                    "end": "2014-02-04T02:30:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qlx74",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Episode 1",
+                            "title": "Earth, Wind and Pyre"
+                        },
+                        "duration": 1800,
+                        "first_broadcast_date": "2013-03-12T00:00:00Z",
+                        "image": {
+                            "pid": "p01l9dc3"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b01r713n",
+                        "position": 1,
+                        "programme": {
+                            "expected_child_count": 2,
+                            "first_broadcast_date": "2013-03-12T00:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b01r7127",
+                            "position": null,
+                            "title": "Earth, Wind and Pyre",
+                            "type": "series"
+                        },
+                        "short_synopsis": "Candi Staton recalls the 1979 anti-disco protest led by a local Chicago DJ.",
+                        "title": "Episode 1",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T02:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-04T03:30:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qlx77",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Bob Geldof and The Vegetarians of Love, Pragvec and Ill Ease",
+                            "title": "6 Music Live Hour"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-04T02:30:00Z",
+                        "image": {
+                            "pid": "p01lzk0c"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tchmq",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-03T04:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rwm3t",
+                            "position": null,
+                            "title": "6 Music Live Hour",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Bob Geldof and The Vegetarians of Love live, plus BBC sessions from Pragvec and Ill Ease.",
+                        "title": "Bob Geldof and The Vegetarians of Love, Pragvec and Ill Ease",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T02:30:00Z"
+                },
+                {
+                    "duration": 5400,
+                    "end": "2014-02-04T05:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qlx7b",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "04/02/2014",
+                            "title": "6 Music's Jukebox"
+                        },
+                        "duration": 5400,
+                        "first_broadcast_date": "2014-02-04T03:30:00Z",
+                        "image": {
+                            "pid": "p01lzk85"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03qkxlp",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-06T01:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rz6v1",
+                            "position": null,
+                            "title": "6 Music's Jukebox",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Chris Hawkins takes you through the early hours playing back to back music.",
+                        "title": "04/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T03:30:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-04T07:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qlx7d",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "04/02/2014",
+                            "title": "Chris Hawkins"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-04T05:00:00Z",
+                        "image": {
+                            "pid": "p01lc263"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tchnx",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-17T02:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072l8y",
+                            "position": null,
+                            "title": "Chris Hawkins",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "The Hawk delivers early morning music and chat to the early risers of the world (unite).",
+                        "title": "04/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T05:00:00Z"
+                },
+                {
+                    "duration": 10800,
+                    "end": "2014-02-04T10:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnz9s",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "With Prof Brian Cox",
+                            "title": "Shaun Keaveny"
+                        },
+                        "duration": 10800,
+                        "first_broadcast_date": "2014-02-04T07:00:00Z",
+                        "image": {
+                            "pid": "p01lcdhn"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcksz",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-17T07:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072l9k",
+                            "position": null,
+                            "title": "Shaun Keaveny",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Prof Brian Cox joins Shaun on the phone to talk all things science.",
+                        "title": "With Prof Brian Cox",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T07:00:00Z"
+                },
+                {
+                    "duration": 10800,
+                    "end": "2014-02-04T13:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnz9t",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Lauren looks into how music affects your Biorhythms",
+                            "title": "Lauren Laverne"
+                        },
+                        "duration": 10800,
+                        "first_broadcast_date": "2014-02-04T10:00:00Z",
+                        "image": {
+                            "pid": "p01q051v"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tclq1",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2008-06-07T16:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00c000j",
+                            "position": null,
+                            "title": "Lauren Laverne",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Lauren looks into how music affects your Biorhythms.",
+                        "title": "Lauren looks into how music affects your Biorhythms",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T10:00:00Z"
+                },
+                {
+                    "duration": 10800,
+                    "end": "2014-02-04T16:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnz9v",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Reece Shearsmith",
+                            "title": "Radcliffe and Maconie"
+                        },
+                        "duration": 10800,
+                        "first_broadcast_date": "2014-02-04T13:00:00Z",
+                        "image": {
+                            "pid": "p01m5hc3"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcbw1",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2011-04-04T13:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0100rp6",
+                            "position": null,
+                            "title": "Radcliffe and Maconie",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Actor Reece Shearsmith joins Mark to chat about new TV series Inside No. 9.",
+                        "title": "Reece Shearsmith",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T13:00:00Z"
+                },
+                {
+                    "duration": 10800,
+                    "end": "2014-02-04T19:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnz9w",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Frankie and the Heartstrings",
+                            "title": "Steve Lamacq"
+                        },
+                        "duration": 10800,
+                        "first_broadcast_date": "2014-02-04T16:00:00Z",
+                        "image": {
+                            "pid": "p01qvnzx"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tclq3",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-17T16:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072lb2",
+                            "position": null,
+                            "title": "Steve Lamacq",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Frankie from Frankie and the Heartstrings chats about the 6 Music Festival.",
+                        "title": "Frankie and the Heartstrings",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T16:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-04T21:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnz9y",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Sara Lowes",
+                            "title": "Marc Riley"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-04T19:00:00Z",
+                        "image": {
+                            "pid": "p01mvfr4"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tclq5",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2008-06-02T19:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00c72y1",
+                            "position": null,
+                            "title": "Marc Riley",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Riley favourite Sara Lowes is in session - always a pleasure to welcome her to the show.",
+                        "title": "Sara Lowes",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T19:00:00Z"
+                },
+                {
+                    "duration": 10800,
+                    "end": "2014-02-05T00:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnz9z",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Tindersticks in concert from 1997",
+                            "title": "Gideon Coe"
+                        },
+                        "duration": 10800,
+                        "first_broadcast_date": "2014-02-04T21:00:00Z",
+                        "image": {
+                            "pid": "p01lc25g"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tclq7",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-17T10:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072l9v",
+                            "position": null,
+                            "title": "Gideon Coe",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Tindersticks in concert, plus sessions from Bo Ningen, Wreckless Eric and General Public.",
+                        "title": "Tindersticks in concert from 1997",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-04T21:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-05T01:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnzb0",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "With Tom Ravenscroft",
+                            "title": "6 Music Recommends"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-05T00:00:00Z",
+                        "image": {
+                            "pid": "p01nmwcw"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcm8l",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-10T01:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rz79k",
+                            "position": null,
+                            "title": "6 Music Recommends",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "A music review show looking at the latest releases.",
+                        "title": "With Tom Ravenscroft",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-05T00:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-05T02:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnzb2",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Today's Music Today",
+                            "title": "The Story of Pop"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2011-02-03T03:00:00Z",
+                        "image": {
+                            "pid": "p01l68ky"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b00y3z76",
+                        "position": 31,
+                        "programme": {
+                            "expected_child_count": 52,
+                            "first_broadcast_date": "2011-01-04T03:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00xp4rp",
+                            "position": null,
+                            "title": "The Story of Pop",
+                            "type": "series"
+                        },
+                        "short_synopsis": "Alan Freeman celebrates the 'new breed' of independent labels in Britain from 1976 to 1981",
+                        "title": "Today's Music Today",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-05T01:00:00Z"
+                },
+                {
+                    "duration": 1800,
+                    "end": "2014-02-05T02:30:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnzb3",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Episode 2",
+                            "title": "Earth, Wind and Pyre"
+                        },
+                        "duration": 1800,
+                        "first_broadcast_date": "2013-03-13T00:00:00Z",
+                        "image": {
+                            "pid": "p01l9dc3"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b01r78qn",
+                        "position": 2,
+                        "programme": {
+                            "expected_child_count": 2,
+                            "first_broadcast_date": "2013-03-12T00:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b01r7127",
+                            "position": null,
+                            "title": "Earth, Wind and Pyre",
+                            "type": "series"
+                        },
+                        "short_synopsis": "Candi Staton recalls the 1979 anti-disco protest led by a local Chicago DJ.",
+                        "title": "Episode 2",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-05T02:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-05T03:30:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnzb5",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "Electric Six, I'm So Hollow and Dressy Bessy",
+                            "title": "6 Music Live Hour"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-05T02:30:00Z",
+                        "image": {
+                            "pid": "p01lzk0c"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcmk5",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-03T04:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rwm3t",
+                            "position": null,
+                            "title": "6 Music Live Hour",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Electric Six at Glastonbury 2003, plus BBC sessions from I'm So Hollow and Dressy Bessy.",
+                        "title": "Electric Six, I'm So Hollow and Dressy Bessy",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-05T02:30:00Z"
+                },
+                {
+                    "duration": 5400,
+                    "end": "2014-02-05T05:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnzb8",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "05/02/2014",
+                            "title": "6 Music's Jukebox"
+                        },
+                        "duration": 5400,
+                        "first_broadcast_date": "2014-02-05T03:30:00Z",
+                        "image": {
+                            "pid": "p01lzk85"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03qkxm2",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-06T01:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rz6v1",
+                            "position": null,
+                            "title": "6 Music's Jukebox",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Chris Hawkins takes you through the early hours playing back to back music.",
+                        "title": "05/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-05T03:30:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-05T07:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qnzbb",
+                    "programme": {
+                        "display_titles": {
+                            "subtitle": "05/02/2014",
+                            "title": "Chris Hawkins"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-05T05:00:00Z",
+                        "image": {
+                            "pid": "p01lc263"
+                        },
+                        "is_available_mediaset_pc_sd": false,
+                        "is_legacy_media": false,
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcpsl",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-17T02:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072l8y",
+                            "position": null,
+                            "title": "Chris Hawkins",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "The Hawk delivers early morning music and chat to the early risers of the world (unite).",
+                        "title": "05/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-05T05:00:00Z"
+                }
+            ],
+            "date": "2014-02-04",
+            "has_next": 1,
+            "has_previous": 1
+        },
+        "service": {
+            "key": "6music",
+            "title": "BBC Radio 6 Music",
+            "type": "radio"
+        }
+    }
+}

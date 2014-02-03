@@ -1,12 +1,16 @@
-class Sport
-  def initialize
-    data = load
+# encoding: utf-8
 
+class Sport
+  def initialize(io=STDOUT)
+    @io = io
+  end
+
+  def headlines
     data['entries'].each { |item|
       prompt = yellow item['prompt'].capitalize.ljust(22)
 
       headline = item['headline']
-      puts prompt+headline
+      @io.puts prompt+headline
     }
   end
 
@@ -16,12 +20,12 @@ class Sport
     'http://polling.bbc.co.uk/sport/0/16189337/ticker.sjson'
   end
 
-  def load
+  def data
     begin
-     raw = open(url, 'UserAgent' => BBC::USER_AGENT).read
+     raw = open(url, 'UserAgent' => AUNTIE::USER_AGENT).read
      JSON.parse(raw)
     rescue
-      puts "Unable to download sport"
+      @io.puts "Unable to download sport"
       exit
     end
   end

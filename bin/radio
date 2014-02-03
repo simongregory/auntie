@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
-require 'bbc'
-
-#program_desc 'BBC Radio schedules from now'
-#version BBC::VERSION
+require 'auntie'
 
 channels = {
   :one => { :id => 'radio1', :region => '/england' },
@@ -31,12 +28,12 @@ if ['help', '-h', '--help'].include? ARGV[0]
 end
 
 if ARGV[0] == 'now'
-  NowNext.new('radio').now
+  NowNext.new.radio_now
   exit
 end
 
 if ARGV[0] == 'next'
-  NowNext.new('radio').next
+  NowNext.new.radio_next
   exit
 end
 
@@ -48,7 +45,7 @@ if channels.has_key? channel.to_sym
     selection[:period] = '/'+ARGV[1]
   end
 
-  Schedule.new selection
+  Schedule.new.load selection
 else
   puts "'#{channel}' is an unknown channel"
 end

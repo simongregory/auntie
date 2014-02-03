@@ -1,0 +1,1118 @@
+{
+    "schedule": {
+        "day": {
+            "broadcasts": [
+                {
+                    "duration": 3600,
+                    "end": "2014-02-02T01:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrvf",
+                    "programme": {
+                        "actual_start": "2014-02-02T01:43:56Z",
+                        "available_until": "2014-02-09T01:02:00Z",
+                        "display_titles": {
+                            "subtitle": "Ice Music Festival",
+                            "title": "Stuart Maconie's Freakier Zone"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-02T00:00:00Z",
+                        "image": {
+                            "pid": "p01r0gf9"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "5 days left to listen",
+                            "expires": "2014-02-09T01:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8hsg",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-10T00:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rwkjd",
+                            "position": null,
+                            "title": "Stuart Maconie's Freakier Zone",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Fiona Talkington reports from the Ice Music Festival in Geilo, Norway.",
+                        "title": "Ice Music Festival",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T00:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-02T02:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrvh",
+                    "programme": {
+                        "actual_start": "2014-02-02T02:54:00Z",
+                        "available_until": "2014-02-09T02:02:00Z",
+                        "display_titles": {
+                            "subtitle": "Bombay Bicycle Club, Colin Greenwood, Connan Mockasin and Jeremy Deller",
+                            "title": "The Joy of 6"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-02T01:00:00Z",
+                        "image": {
+                            "pid": "p01m1k4t"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T02:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8jl1",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-13T01:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rwkk1",
+                            "position": null,
+                            "title": "The Joy of 6",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Bombay Bicycle Club in session, plus Colin Greenwood, Connan Mockasin and Jeremy Deller.",
+                        "title": "Bombay Bicycle Club, Colin Greenwood, Connan Mockasin and Jeremy Deller",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T01:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-02T03:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrvj",
+                    "programme": {
+                        "actual_start": "2014-02-02T03:47:08Z",
+                        "available_until": "2014-02-09T03:02:00Z",
+                        "display_titles": {
+                            "subtitle": "The New Music Playlist",
+                            "title": "6 Music Recommends"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-02T02:00:00Z",
+                        "image": {
+                            "pid": "p01lzjzm"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T03:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8jl3",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-10T01:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rz79k",
+                            "position": null,
+                            "title": "6 Music Recommends",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "New music in one handy bitesize programme.",
+                        "title": "The New Music Playlist",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T02:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-02T04:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrvk",
+                    "programme": {
+                        "actual_start": "2014-02-02T04:42:36Z",
+                        "available_until": "2014-02-09T04:02:00Z",
+                        "display_titles": {
+                            "subtitle": "The Movies, The Colourfield and Lunachicks",
+                            "title": "6 Music Live Hour"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-02T03:00:00Z",
+                        "image": {
+                            "pid": "p01lzk0c"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T04:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8jr3",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-03T04:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rwm3t",
+                            "position": null,
+                            "title": "6 Music Live Hour",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "The Movies live in London in 1980, plus sessions from The Colourfield and Lunachicks.",
+                        "title": "The Movies, The Colourfield and Lunachicks",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T03:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-02T05:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrvl",
+                    "programme": {
+                        "actual_start": "2014-02-02T05:41:53Z",
+                        "available_until": "2014-02-09T05:02:00Z",
+                        "display_titles": {
+                            "subtitle": "Hit Factories",
+                            "title": "The Story of Pop"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2011-01-31T03:00:00Z",
+                        "image": {
+                            "pid": "p01l68ky"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T05:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b00y38j3",
+                        "position": 28,
+                        "programme": {
+                            "expected_child_count": 52,
+                            "first_broadcast_date": "2011-01-04T03:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00xp4rp",
+                            "position": null,
+                            "title": "The Story of Pop",
+                            "type": "series"
+                        },
+                        "short_synopsis": "Alan Freeman explores the world of teen idols and the managers who pull the strings.",
+                        "title": "Hit Factories",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T04:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-02T07:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrvm",
+                    "programme": {
+                        "actual_start": "2014-02-02T07:41:31Z",
+                        "available_until": "2014-02-09T07:02:00Z",
+                        "display_titles": {
+                            "subtitle": "02/02/2014",
+                            "title": "Chris Hawkins"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-02T05:00:00Z",
+                        "image": {
+                            "pid": "p01lc263"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T07:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8lwp",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-17T02:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072l8y",
+                            "position": null,
+                            "title": "Chris Hawkins",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "A great mix of music for the weekend, including a featured album by Kate Bush.",
+                        "title": "02/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T05:00:00Z"
+                },
+                {
+                    "duration": 10800,
+                    "end": "2014-02-02T10:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz0",
+                    "programme": {
+                        "actual_start": "2014-02-02T10:46:31Z",
+                        "available_until": "2014-02-09T10:02:00Z",
+                        "display_titles": {
+                            "subtitle": "Kevin Cummins and Mike Joyce: How to Take a Decent Photo",
+                            "title": "Mary Anne Hobbs"
+                        },
+                        "duration": 10800,
+                        "first_broadcast_date": "2014-02-02T07:00:00Z",
+                        "image": {
+                            "pid": "p01qw2gm"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T10:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8mz6",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2013-01-05T07:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b01pp0xq",
+                            "position": null,
+                            "title": "Mary Anne Hobbs",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Kevin Cummins and Mike Joyce join Mary Ann to discuss iconic music photography.",
+                        "title": "Kevin Cummins and Mike Joyce: How to Take a Decent Photo",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T07:00:00Z"
+                },
+                {
+                    "duration": 10800,
+                    "end": "2014-02-02T13:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz1",
+                    "programme": {
+                        "actual_start": "2014-02-02T13:47:38Z",
+                        "available_until": "2014-02-09T13:02:00Z",
+                        "display_titles": {
+                            "subtitle": "02/02/2014",
+                            "title": "Cerys on 6"
+                        },
+                        "duration": 10800,
+                        "first_broadcast_date": "2014-02-02T10:00:00Z",
+                        "image": {
+                            "pid": "p00splv9"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T13:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8mz8",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2009-07-06T13:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00llg30",
+                            "position": null,
+                            "title": "Cerys on 6",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Cerys Matthews brings you eclectic music from blues to beats.",
+                        "title": "02/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T10:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-02T14:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz2",
+                    "programme": {
+                        "actual_start": "2014-02-02T14:42:51Z",
+                        "available_until": "2014-02-09T14:02:00Z",
+                        "display_titles": {
+                            "subtitle": "With Midlake",
+                            "title": "6 Music Playlist"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-02T13:00:00Z",
+                        "image": {
+                            "pid": "p01qrc50"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T14:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8nsl",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2012-02-12T12:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b01c85d6",
+                            "position": null,
+                            "title": "6 Music Playlist",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Midlake frontman Eric Pulido presents the show ahead of them playing the 6 Music Festival.",
+                        "title": "With Midlake",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T13:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-02T16:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz3",
+                    "programme": {
+                        "actual_start": "2014-02-02T16:53:37Z",
+                        "available_until": "2014-02-09T16:02:00Z",
+                        "display_titles": {
+                            "subtitle": "02/02/2014",
+                            "title": "Guy Garvey's Finest Hour"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-02T14:00:00Z",
+                        "image": {
+                            "pid": "p01r1839"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T16:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8r4f",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-16T22:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072q60",
+                            "position": null,
+                            "title": "Guy Garvey's Finest Hour",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Guy presents the show - not from his flat in North Manchester. Where is he?",
+                        "title": "02/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T14:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-02T18:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz4",
+                    "programme": {
+                        "actual_start": "2014-02-02T18:41:00Z",
+                        "available_until": "2014-02-09T18:02:00Z",
+                        "display_titles": {
+                            "subtitle": "02/02/2014",
+                            "title": "Terry Hall"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-02T16:00:00Z",
+                        "image": {
+                            "pid": "p01qvgnp"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T18:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcd85",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2014-02-02T16:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b03tcd32",
+                            "position": null,
+                            "title": "Terry Hall",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Specials frontman Terry Hall takes over the Sunday afternoon slot for February.",
+                        "title": "02/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T16:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-02T20:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz5",
+                    "programme": {
+                        "actual_start": "2014-02-02T20:42:12Z",
+                        "available_until": "2014-02-09T20:02:00Z",
+                        "display_titles": {
+                            "subtitle": "#Seeger6Music - A Tribute to Pete Seeger",
+                            "title": "Now Playing @6Music"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-02T18:00:00Z",
+                        "image": {
+                            "pid": "p01qr3ww"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T20:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcf95",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2011-04-08T19:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00zw9nx",
+                            "position": null,
+                            "title": "Now Playing @6Music",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Nemone invites 6 Music listeners to create a tribute playlist in honour of Pete Seeger.",
+                        "title": "#Seeger6Music - A Tribute to Pete Seeger",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T18:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-02T22:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz6",
+                    "programme": {
+                        "actual_start": "2014-02-02T22:43:55Z",
+                        "available_until": "2014-02-09T22:02:00Z",
+                        "display_titles": {
+                            "subtitle": "Kemper Norton",
+                            "title": "Stuart Maconie's Freak Zone"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-02T20:00:00Z",
+                        "image": {
+                            "pid": "p01m1xvk"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T22:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcf97",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-16T17:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072l4x",
+                            "position": null,
+                            "title": "Stuart Maconie's Freak Zone",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Kemper Norton talks to Stuart about creating ambient music using field recordings.",
+                        "title": "Kemper Norton",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T20:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-03T00:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrz7",
+                    "programme": {
+                        "actual_start": "2014-02-03T00:41:10Z",
+                        "available_until": "2014-02-10T00:02:00Z",
+                        "display_titles": {
+                            "subtitle": "Beaty Heart, King Tubby, Husky, Coves and Alton Ellis",
+                            "title": "Don Letts"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-02T22:00:00Z",
+                        "image": {
+                            "pid": "p01lcd8x"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-10T00:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcf99",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-15T23:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072pzt",
+                            "position": null,
+                            "title": "Don Letts",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "The Don's selections include Beaty Heart, King Tubby, Husky, Coves and Alton Ellis.",
+                        "title": "Beaty Heart, King Tubby, Husky, Coves and Alton Ellis",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-02T22:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-03T02:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": true,
+                    "pid": "p01qgrz9",
+                    "programme": {
+                        "actual_start": "2014-02-02T16:53:37Z",
+                        "available_until": "2014-02-09T16:02:00Z",
+                        "display_titles": {
+                            "subtitle": "02/02/2014",
+                            "title": "Guy Garvey's Finest Hour"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-02T14:00:00Z",
+                        "image": {
+                            "pid": "p01r1839"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "6 days left to listen",
+                            "expires": "2014-02-09T16:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03t8r4f",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-16T22:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072q60",
+                            "position": null,
+                            "title": "Guy Garvey's Finest Hour",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Guy presents the show - not from his flat in North Manchester. Where is he?",
+                        "title": "02/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-03T00:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-03T03:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrzc",
+                    "programme": {
+                        "actual_start": "2014-02-03T04:12:44Z",
+                        "available_until": "2014-02-10T03:02:00Z",
+                        "display_titles": {
+                            "subtitle": "03/02/2014",
+                            "title": "The BBC Introducing Mixtape"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-03T02:00:00Z",
+                        "image": {
+                            "pid": "p01qfcws"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "7 days left to listen",
+                            "expires": "2014-02-10T03:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcgrh",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2012-04-09T02:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b01ghtz0",
+                            "position": null,
+                            "title": "The BBC Introducing Mixtape",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Tom Robinson presents a mixtape of his personal selection of tracks from BBC Introducing.",
+                        "title": "03/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-03T02:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-03T04:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrzd",
+                    "programme": {
+                        "actual_start": "2014-02-03T04:46:46Z",
+                        "available_until": "2014-02-10T04:02:00Z",
+                        "display_titles": {
+                            "subtitle": "Phish, Dinosaur Jr and Cutting Pink with Knives",
+                            "title": "6 Music Live Hour"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2014-02-03T03:00:00Z",
+                        "image": {
+                            "pid": "p01lzk0c"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "7 days left to listen",
+                            "expires": "2014-02-10T04:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcgrk",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2010-04-03T04:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00rwm3t",
+                            "position": null,
+                            "title": "6 Music Live Hour",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "Phish at Glastonbury 1997, plus sessions from Dinosaur Jr and Cutting Pink with Knives.",
+                        "title": "Phish, Dinosaur Jr and Cutting Pink with Knives",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-03T03:00:00Z"
+                },
+                {
+                    "duration": 3600,
+                    "end": "2014-02-03T05:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrzg",
+                    "programme": {
+                        "actual_start": "2014-02-03T05:41:49Z",
+                        "available_until": "2014-02-10T05:02:00Z",
+                        "display_titles": {
+                            "subtitle": "A Reasonable Guide to a Horrible Noise",
+                            "title": "The Story of Pop"
+                        },
+                        "duration": 3600,
+                        "first_broadcast_date": "2011-02-01T03:00:00Z",
+                        "image": {
+                            "pid": "p01l68ky"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "7 days left to listen",
+                            "expires": "2014-02-10T05:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b00y3z5b",
+                        "position": 29,
+                        "programme": {
+                            "expected_child_count": 52,
+                            "first_broadcast_date": "2011-01-04T03:00:00Z",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b00xp4rp",
+                            "position": null,
+                            "title": "The Story of Pop",
+                            "type": "series"
+                        },
+                        "short_synopsis": "Alan Freeman looks back at the rise and fall of punk rock in Britain.",
+                        "title": "A Reasonable Guide to a Horrible Noise",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-03T04:00:00Z"
+                },
+                {
+                    "duration": 7200,
+                    "end": "2014-02-03T07:00:00Z",
+                    "is_blanked": false,
+                    "is_repeat": false,
+                    "pid": "p01qgrzk",
+                    "programme": {
+                        "actual_start": "2014-02-03T07:46:58Z",
+                        "available_until": "2014-02-10T07:02:00Z",
+                        "display_titles": {
+                            "subtitle": "03/02/2014",
+                            "title": "Chris Hawkins"
+                        },
+                        "duration": 7200,
+                        "first_broadcast_date": "2014-02-03T05:00:00Z",
+                        "image": {
+                            "pid": "p01lc263"
+                        },
+                        "is_available_mediaset_pc_sd": true,
+                        "is_legacy_media": false,
+                        "media": {
+                            "availability": "7 days left to listen",
+                            "expires": "2014-02-10T07:02:00Z",
+                            "format": "audio"
+                        },
+                        "media_type": "audio",
+                        "ownership": {
+                            "service": {
+                                "id": "bbc_6music",
+                                "key": "6music",
+                                "title": "BBC Radio 6 Music",
+                                "type": "radio"
+                            }
+                        },
+                        "pid": "b03tcgt1",
+                        "position": null,
+                        "programme": {
+                            "expected_child_count": null,
+                            "first_broadcast_date": "2007-09-17T02:00:00+01:00",
+                            "ownership": {
+                                "service": {
+                                    "id": "bbc_6music",
+                                    "key": "6music",
+                                    "title": "BBC Radio 6 Music",
+                                    "type": "radio"
+                                }
+                            },
+                            "pid": "b0072l8y",
+                            "position": null,
+                            "title": "Chris Hawkins",
+                            "type": "brand"
+                        },
+                        "short_synopsis": "The Hawk delivers early morning music and chat to the early risers of the world (unite).",
+                        "title": "03/02/2014",
+                        "type": "episode"
+                    },
+                    "start": "2014-02-03T05:00:00Z"
+                }
+            ],
+            "date": "2014-02-02",
+            "has_next": 1,
+            "has_previous": 1
+        },
+        "service": {
+            "key": "6music",
+            "title": "BBC Radio 6 Music",
+            "type": "radio"
+        }
+    }
+}

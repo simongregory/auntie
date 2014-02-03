@@ -1,23 +1,23 @@
 #!/usr/bin/env ruby
-require 'bbc'
-
-if ARGV[0] == 'help' && ARGV[1] == '-c'
-  puts "hourly"
-  puts "daily"
-  puts "loc"
-  exit
-end
+require 'auntie'
 
 if ['help', '-h', '--help'].include? ARGV[0]
   puts 'Useage: weather <Postcode or BBC location id>'
+  puts ' '
+  puts "To find a BBC location id use: weather loc 'search term'"
   exit
 end
 
 if ARGV[0] == 'loc'
-  Location.new(ARGV[1])
+  place = ARGV[1..-1].join(' ')
+
+  abort "Please specify a location to search for." if place.empty?
+  place = "Hadfield" if place.downcase == 'royston vasey'
+
+  Location.new.find(place)
   exit
 end
 
 location = ARGV[0] ||= '2643743' #'2643743' #Default to London. UK postcodes also work
 
-Forecast.new(location).hourly
+Weather.new(location).hourly

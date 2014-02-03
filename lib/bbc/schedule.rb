@@ -1,11 +1,13 @@
+# encoding: utf-8
+
 # Helpful urls
 #
 # http://www.bbc.co.uk/programmes/developers
 # http://www.bbc.co.uk/ontologies/programmes/2009-09-07.shtml
 
 class Schedule
-  def initialize(channel)
-    load channel
+  def initialize(io=STDOUT)
+    @io = io
   end
 
   def load channel
@@ -14,20 +16,19 @@ class Schedule
     period = channel[:period] ||= ''
 
     url = "http://www.bbc.co.uk/#{station}/programmes/schedules#{region}#{period}.json"
-    raw = open(url, 'UserAgent' => 'bbc-programmes-cli-v0.1.0').read
+
+    raw = open(url, 'UserAgent' => AUNTIE::USER_AGENT).read
     data = JSON.parse(raw)
 
     list data
   end
 
   def list data
-    now = Time.new
+    now = time_now
 
     data['schedule']['day']['broadcasts'].each do |e|
 
       ends = Time.parse(e['end'])
-
-      next if ends < now
 
       title = e['programme']['display_titles']['title']
       #synopsis = e['programme']['short_synopsis']
@@ -42,7 +43,11 @@ class Schedule
         desc = light_green desc
       end
 
-      puts desc
+      @io.puts desc
     end
+  end
+
+  def time_now
+    Time.now
   end
 end

@@ -2,17 +2,17 @@
 
 require File.join(File.dirname(__FILE__), "/../spec_helper")
 
-describe BBC, "when used" do
-  it "should version the application in a conventional manner" do
-    BBC::VERSION.should =~ /\d+\.\d+\.\d+/
+describe AUNTIE, "when asked" do
+  it "provides a human readable name for the application" do
+    AUNTIE::NAME.should_not be_nil
   end
 
-  it "should describe the application" do
-    BBC::NAME.should_not be_nil
+  it "shows the semantic version of the application" do
+    AUNTIE::VERSION.should =~ /\d+\.\d+\.\d+/
   end
 
-  it "has a user agent which includes the application version" do
-    BBC::USER_AGENT.should =~ /\d+\.\d+\.\d+/
-    BBC::USER_AGENT.should =~ /#{BBC::NAME}/
+  it "has a user agent which includes the application name and version" do
+    AUNTIE::USER_AGENT.should =~ /\d+\.\d+\.\d+/
+    AUNTIE::USER_AGENT.should =~ /#{AUNTIE::NAME}/
   end
 end
