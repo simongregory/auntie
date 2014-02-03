@@ -5,10 +5,11 @@ spec = Gem::Specification.new do |s|
   s.version = AUNTIE::VERSION
   s.author = 'Simon Gregory'
   s.email = 'simon.gregory@bbc.co.uk'
-  s.homepage = 'http://www.bbc.co.uk'
+  s.homepage = 'https://github.com/simongregory/auntie'
   s.platform = Gem::Platform::RUBY
   s.description = 'Command line access to BBC services'
   s.summary = 'BBC news, weather, sport, and tv & radio schedules right in your shell'
+  s.license = 'MIT'
   s.files = Dir['**/*']
   s.files.reject! { |fn| fn.match /\.(DS_Store|svn|git|tmproj|gem)|tmp/ }
   s.require_paths << 'lib'
