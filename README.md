@@ -1,5 +1,7 @@
 # Auntie
 
+[![Build Status](https://travis-ci.org/simongregory/auntie.png?branch=master)](https://travis-ci.org/simongregory/auntie)
+
 A Ruby Gem for accessing [BBC]() weather, tv, radio, news and sport feeds.
 
 # Install
