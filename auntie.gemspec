@@ -11,7 +11,7 @@ spec = Gem::Specification.new do |s|
   s.summary = 'BBC news, weather, sport, and tv & radio schedules right in your shell'
   s.license = 'MIT'
   s.files = Dir['**/*']
-  s.files.reject! { |fn| fn.match /\.(DS_Store|svn|git|tmproj|gem)|tmp/ }
+  s.files.reject! { |fn| fn.match /\.(DS_Store|svn|git|tmproj|gem)|tmp|scratch/ }
   s.require_paths << 'lib'
   s.bindir = 'bin'
   s.executables << 'weather'
