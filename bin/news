@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
 require 'auntie'
 
+if ['help', '-h', '--help'].include? ARGV[0]
+  puts 'Useage: news'
+  exit
+end
+
 News.new.load
