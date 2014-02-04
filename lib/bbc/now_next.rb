@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class NowNext
-  def initialize(io=STDIN)
+  def initialize(io=STDOUT)
     @io = io
   end
 
@@ -80,7 +80,6 @@ class NowNext
     programmes.sort_by! { |p| p.starts }
 
     programmes.each { |p|  @io.puts sprintf "%-#{first}s %-#{second}s %s", p.starts_in, p.channel, p.title }
-
   end
 
   def format_channel name
