@@ -37,11 +37,11 @@ end
 #
 #############################################################################
 
+gem_name = AUNTIE::NAME
+gem_version = AUNTIE::VERSION
+
 desc "Build, tag and release the gem"
 task :release do
-  gem_name = AUNTIE::NAME
-  gem_version = AUNTIE::VERSION
-
   puts ""
   print "Are you sure you want to release #{gem_name} #{gem_version}? [y/N] "
   exit unless STDIN.gets.index(/y/i) == 0
