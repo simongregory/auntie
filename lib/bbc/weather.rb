@@ -48,7 +48,7 @@ class Weather
     location = feed['forecastContent']['location']['locationName']
 
     @io.puts "\nThe next 3 days in #{location}\n\n"
-    @io.puts "Day        Time    Weather            Max#{degrees_c}    Wind"
+    @io.puts "Day        Weather           Max#{degrees_c}  Wind"
 
     feed['forecastContent']['forecasts'].each { |e|
       day = sprintf "%-10s", e['dayName']
@@ -69,9 +69,9 @@ class Weather
       n_temp = e['night']['minTemperature']['centigrade']
       n_temp = "#{n_temp}\xC2\xB0C" unless n_temp.nil?
 
-      night_desc = sprintf "%-12s %-3s", n_weather, n_temp
+      night_desc = sprintf "%-17s %-3s", n_weather, n_temp
 
-      @io.puts "#{yellow day} #{day_desc} #{cyan 'night'} #{white night_desc}"
+      @io.puts "#{yellow day} #{day_desc} #{cyan 'Night'} #{white night_desc}"
     }
   end
 
