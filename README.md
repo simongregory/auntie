@@ -1,14 +1,15 @@
 # Auntie
 
 [![Build Status](https://travis-ci.org/simongregory/auntie.png?branch=master)](https://travis-ci.org/simongregory/auntie)
+[![Code Climate](https://codeclimate.com/github/simongregory/auntie.png)](https://codeclimate.com/github/simongregory/auntie)
 
-A Ruby Gem for accessing [BBC]() weather, tv, radio, news and sport feeds.
+A Ruby Gem for accessing [BBC]() Weather, TV, Radio, News and Sport feeds.
 
-# Install
+## Install
 
     gem install auntie
 
-# Use
+## Use
 
     weather      # lists the weather for the next 24 hours
 
@@ -24,18 +25,19 @@ A Ruby Gem for accessing [BBC]() weather, tv, radio, news and sport feeds.
     
     sport        # the latest sport headlines
 
-# zsh integration
+## zsh integration
 
-For zsh-shell completion you'll want to create a file called `_radio` with the following contents:
+[zsh][] shell completion can be added to the `tv`, `radio` and `weather` tools. Radio, for example, can be enabled by creating a file called `_radio` with the following contents:
 
     #compdef radio
     compadd `radio help -c`
 
-and source it via your .zshrc file. The same can be done for the `tv` and `weather`.
+and source it via your .zshrc file.
 
-# Licence
+## Licence
 
 [MIT][], see accomanying [LICENSE](LICENSE) document
 
 [BBC]: http://www.bbc.co.uk/
 [MIT]: http://opensource.org/licenses/MIT
+[zsh]: http://zsh.sourceforge.net
