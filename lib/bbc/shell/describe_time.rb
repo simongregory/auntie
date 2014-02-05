@@ -4,7 +4,7 @@ def how_long_between past, future
   a = (future-past).to_i
 
   case a
-    when -10000000..0 then "On now"
+    when -10000000...0 then "On now"
     when 0 then 'Now!'
     when 1 then 'A second'
     when 2..59 then a.to_s+' secs'
@@ -14,7 +14,7 @@ def how_long_between past, future
     when 7101..82800 then ((a+99)/3600).to_i.to_s+' hours'
     when 82801..172000 then 'A day' # 86400 = 1 day
     when 172001..518400 then ((a+800)/(60*60*24)).to_i.to_s+' days'
-    when 518400..1036800 then 'A week'
+    when 518401..1036800 then 'A week'
     else ((a+180000)/(60*60*24*7)).to_i.to_s+' weeks'
   end
 end
