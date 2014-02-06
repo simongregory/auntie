@@ -1,9 +1,10 @@
 # encoding: utf-8
 
-def how_long_between past, future
-  a = (future-past).to_i
+module Timings
+  def how_long_between past, future
+    a = (future-past).to_i
 
-  case a
+    case a
     when -10000000...0 then "On now"
     when 0 then 'Now!'
     when 1 then 'A second'
@@ -16,5 +17,12 @@ def how_long_between past, future
     when 172001..518400 then ((a+800)/(60*60*24)).to_i.to_s+' days'
     when 518401..1036800 then 'A week'
     else ((a+180000)/(60*60*24*7)).to_i.to_s+' weeks'
+    end
   end
+
+  def time_now
+    Time.now
+  end
+
+  module_function :how_long_between, :time_now
 end

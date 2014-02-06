@@ -40,6 +40,10 @@ module ShellCharacters
     "\xC2\xB0C" #Shell escaped °C
   end
 
+  def degrees_f
+    "\xC2\xB0F" #Shell escaped °F
+  end
+
   def square_block
     "\xe2\x96\x88"
   end
@@ -65,4 +69,10 @@ module ShellCharacters
       else north
     end
   end
+
+  module_function :symbol_for_compass,
+                  :north, :east, :south, :west,
+                  :north_east, :south_east, :south_west, :north_west,
+                  :degrees_c, :degrees_f, :square_block
+
 end

@@ -8,6 +8,11 @@ describe Location, "when first created" do
     @location = Location.new(@io)
   end
 
+  after(:each) do
+    @location = nil
+    @io = nil
+  end
+
   it "lists location matches for a term" do
     @location.stub_chain(:open, :read) { fixture 'location.json' }
 
@@ -21,25 +26,20 @@ describe Location, "when first created" do
   end
 
   it "warns when a term is too small" do
-    lambda {
-      @location.find 'ky'
-    }.should raise_error(SystemExit)
-
-    #TODO: Check it emits "Please use a longer search term"
+    expect { @location.find 'ky' }.to raise_error('Please use a longer search term')
   end
 
   it "explains when no results are found" do
+    @location.stub_chain(:open, :read) { '{}' }
+
+    @location.find 'Royston Vasey'
+
+    expect( @io.string ).to include("No locations found matching 'Royston Vasey'")
   end
 
   it "explains when it fails" do
     @location.stub_chain(:open, :read) { 'corrupt { json' }
 
-    begin
-      @location.find 'Royston Vasey'
-    rescue SystemExit
-    end
-
-    expect(@io.string).to end_with "Unable to download location data\n"
+    expect { @location.find 'Royston Vasey' }.to raise_error('Unable to download location data')
   end
 end
-

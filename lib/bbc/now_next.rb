@@ -1,6 +1,8 @@
 # encoding: utf-8
 
 class NowNext
+  include Timings
+
   def initialize(io=STDOUT)
     @io = io
   end
@@ -42,8 +44,7 @@ class NowNext
      raw = open("http://www.bbc.co.uk/iplayer/ion/multinownext/service_type/#{medium}/simulcast_only/1/format/json", 'UserAgent' => AUNTIE::USER_AGENT).read
      @data = JSON.parse(raw)
     rescue
-      @io.puts "Unable to download #{medium} schedules"
-      exit
+      raise "Unable to download #{medium} schedules"
     end
   end
 
@@ -84,9 +85,5 @@ class NowNext
 
   def format_channel name
     name.gsub(/^BBC | (London|England|Channel)/,'')
-  end
-
-  def time_now
-    Time.now
   end
 end

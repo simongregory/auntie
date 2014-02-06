@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class Weather
-  include ShellCharacters
+  include ShellCharacters, ShellColors
 
   attr_reader :base_url
 

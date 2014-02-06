@@ -6,6 +6,8 @@
 # http://www.bbc.co.uk/ontologies/programmes/2009-09-07.shtml
 
 class Schedule
+  include ShellColors
+
   def initialize(io=STDOUT)
     @io = io
   end
@@ -44,9 +46,5 @@ class Schedule
 
       @io.puts desc
     end
-  end
-
-  def time_now
-    Time.now
   end
 end

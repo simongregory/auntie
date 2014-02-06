@@ -1,12 +1,14 @@
 # encoding: utf-8
 
 class Location
+  include ShellColors
+
   def initialize(io=STDOUT)
     @io = io
   end
 
   def find(place)
-    abort "Please use a longer search term" if place.length < 3
+    raise 'Please use a longer search term' if place.length < 3
 
     @io.print "Searching for #{place}..."
 
@@ -22,8 +24,7 @@ class Location
      raw = open(url(place), 'UserAgent' => AUNTIE::USER_AGENT).read
      data = JSON.parse(raw)
     rescue
-      @io.puts "Unable to download location data"
-      exit
+      raise "Unable to download location data"
     end
 
     @io.print "\r"

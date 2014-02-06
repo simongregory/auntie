@@ -16,7 +16,6 @@ describe NowNext do
   end
 
   it "shows what's on tv now" do
-    #TODO: Mock Time
     @nn.stub_chain(:open, :read) { fixture 'now_next_tv.json' }
     @nn.tv_now
 
@@ -49,5 +48,14 @@ describe NowNext do
 
     expect(@io.string).to match(/40 mins\s+Radio 6 Music\s+Radcliffe and Maconie/)
     expect(@io.string).to match(/5 hours\s+Radio 5 live sports extra\s+Coming up on 5 live sports extra/)
+  end
+
+  it "explains when it fails" do
+    @nn.stub_chain(:open, :read) { 'corrupt { json' }
+
+    expect { @nn.radio_now }.to raise_error('Unable to download radio schedules')
+    expect { @nn.radio_next }.to raise_error('Unable to download radio schedules')
+    expect { @nn.tv_next }.to raise_error('Unable to download tv schedules')
+    expect { @nn.tv_now }.to raise_error('Unable to download tv schedules')
   end
 end

@@ -3,7 +3,6 @@
 require File.join(File.dirname(__FILE__), "/../spec_helper")
 
 describe Schedule do
-
   before(:each) do
     @io = StringIO.new
     @schedule = Schedule.new @io

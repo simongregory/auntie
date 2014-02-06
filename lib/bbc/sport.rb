@@ -1,6 +1,8 @@
 # encoding: utf-8
 
 class Sport
+  include ShellColors
+
   def initialize(io=STDOUT)
     @io = io
   end
