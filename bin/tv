@@ -24,7 +24,7 @@ end
 helps = ['help', '-h', '--help']
 
 if helps.include? ARGV[0]
-  puts 'Useage: tv <channel>'
+  puts 'Useage: tv [channel]'
   exit
 end
 

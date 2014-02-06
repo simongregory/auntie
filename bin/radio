@@ -23,7 +23,7 @@ if ARGV[0] == 'help' && ARGV[1] == '-c'
 end
 
 if ['help', '-h', '--help'].include? ARGV[0]
-  puts 'Useage: radio <channel>'
+  puts 'Useage: radio [station]'
   exit
 end
 

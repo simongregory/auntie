@@ -8,7 +8,7 @@ end
 
 if ['help', '-h', '--help'].include? ARGV[0]
   puts 'Useage: weather <Postcode or BBC location id>'
-  puts '                --location-search <place>'
+  puts '                --location-search <place name>'
   puts '                --hourly <Postcode or BBC location id>'
   puts '                --daily <Postcode or BBC location id>'
   exit

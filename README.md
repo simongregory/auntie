@@ -1,8 +1,10 @@
-# Auntie
-
 [![Build Status](https://travis-ci.org/simongregory/auntie.png?branch=master)](https://travis-ci.org/simongregory/auntie)
+[![Coverage](https://coveralls.io/repos/simongregory/auntie/badge.png?branch=master)](https://coveralls.io/r/simongregory/auntie)
 [![Code Climate](https://codeclimate.com/github/simongregory/auntie.png)](https://codeclimate.com/github/simongregory/auntie)
 [![Dependency Status](https://gemnasium.com/simongregory/auntie.png)](https://gemnasium.com/simongregory/auntie)
+[![Gem Version](https://badge.fury.io/rb/auntie.png)](http://badge.fury.io/rb/auntie)
+
+# Auntie
 
 A Ruby Gem for accessing [BBC]() Weather, TV, Radio, News and Sport feeds.
 
