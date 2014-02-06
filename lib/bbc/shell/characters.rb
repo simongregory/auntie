@@ -1,9 +1,8 @@
 # encoding: utf-8
 
-#http://www.utf8-chartable.de/unicode-utf8-table.pl
+# http://www.utf8-chartable.de/unicode-utf8-table.pl
 
 module ShellCharacters
-
   def west
     "\xe2\x86\x90"
   end
@@ -37,11 +36,11 @@ module ShellCharacters
   end
 
   def degrees_c
-    "\xC2\xB0C" #Shell escaped °C
+    "\xC2\xB0C"
   end
 
   def degrees_f
-    "\xC2\xB0F" #Shell escaped °F
+    "\xC2\xB0F"
   end
 
   def square_block
@@ -50,23 +49,23 @@ module ShellCharacters
 
   def symbol_for_compass(direction)
     case direction
-      when 'N' then north
-      when 'NNE' then north
-      when 'NE' then north_east
-      when 'ENE' then east
-      when 'E' then east
-      when 'ESE' then east
-      when 'SE' then south_east
-      when 'SSE' then south
-      when 'S' then south
-      when 'SSW' then south
-      when 'SW' then south_west
-      when 'WSW' then west
-      when 'W' then west
-      when 'WNW' then west
-      when 'NW' then north_west
-      when 'NNW' then north
-      else north
+    when 'N' then north
+    when 'NNE' then north
+    when 'NE' then north_east
+    when 'ENE' then east
+    when 'E' then east
+    when 'ESE' then east
+    when 'SE' then south_east
+    when 'SSE' then south
+    when 'S' then south
+    when 'SSW' then south
+    when 'SW' then south_west
+    when 'WSW' then west
+    when 'W' then west
+    when 'WNW' then west
+    when 'NW' then north_west
+    when 'NNW' then north
+    else north
     end
   end
 
@@ -74,5 +73,4 @@ module ShellCharacters
                   :north, :east, :south, :west,
                   :north_east, :south_east, :south_west, :north_west,
                   :degrees_c, :degrees_f, :square_block
-
 end

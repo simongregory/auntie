@@ -2,26 +2,26 @@
 require 'auntie'
 
 channels = {
-  :one => { :id => 'bbcone', :region => '/london' },
-  :two => { :id => 'bbctwo', :region => '/england' },
-  :three => { :id => 'bbcthree' },
-  :four => { :id => 'bbcfour' },
-  :cbeebies => { :id => 'cbeebies' },
-  :cbbc => { :id => 'cbbc' },
-  :news => { :id => 'bbcnews' },
-  :parliament => { :id => 'parliament' },
-  :alba => { :id => 'alba', }
+  one: { id: 'bbcone', region: '/london' },
+  two: { id: 'bbctwo', region: '/england' },
+  three: { id: 'bbcthree' },
+  four: { id: 'bbcfour' },
+  cbeebies: { id: 'cbeebies' },
+  cbbc: { id: 'cbbc' },
+  news: { id: 'bbcnews' },
+  parliament: { id: 'parliament' },
+  alba: { id: 'alba' }
 }
 
 channel = ARGV[0] || :one
 
 if ARGV[0] == 'help' && ARGV[1] == '-c'
-  channels.each { |k,v| puts k }
+  channels.each { |k, v| puts k }
   puts "now\nnext"
   exit
 end
 
-helps = ['help', '-h', '--help']
+helps = %w(help -h --help)
 
 if helps.include? ARGV[0]
   puts 'Useage: tv [channel]'
@@ -38,7 +38,7 @@ if ARGV[0] == 'next'
   exit
 end
 
-if channels.has_key? channel.to_sym
+if channels.key? channel.to_sym
   Schedule.new.load channels[channel.to_sym]
 else
   puts "'#{channel}' is an unknown channel"

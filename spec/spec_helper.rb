@@ -6,8 +6,8 @@
 require 'simplecov'
 SimpleCov.start
 
-$:.push File.join(File.dirname(__FILE__), "..", "lib")
-$:.push File.dirname(__FILE__)
+$LOAD_PATH.push File.join(File.dirname(__FILE__), '..', 'lib')
+$LOAD_PATH.push File.dirname(__FILE__)
 
 require 'auntie'
 

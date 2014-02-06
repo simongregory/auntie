@@ -2,11 +2,12 @@
 require 'auntie'
 
 if ARGV[0] == 'help' && ARGV[1] == '-c'
-  puts "--location-search\n--hourly\n--daily"  #loc-search doesn't seem to be compatible with zsh completion?
+  # loc-search doesn't seem to be compatible with zsh completion?
+  puts "--location-search\n--hourly\n--daily"
   exit
 end
 
-if ['help', '-h', '--help'].include? ARGV[0]
+if %w(help -h --help).include? ARGV[0]
   puts 'Useage: weather <Postcode or BBC location id>'
   puts '                --location-search <place name>'
   puts '                --hourly <Postcode or BBC location id>'
@@ -17,15 +18,15 @@ end
 if ARGV[0] == '--location-search'
   place = ARGV[1..-1].join(' ')
 
-  abort "Please specify a location to search for." if place.empty?
-  place = "Hadfield" if place.downcase == 'royston vasey'
+  abort 'Please specify a location to search for.' if place.empty?
+  place = 'Hadfield' if place.downcase == 'royston vasey'
 
   Location.new.find(place)
   exit
 end
 
 def location
-  ARGV[0] ||= '2643743'  #Default to London.
+  ARGV[0] ||= '2643743' # Default to London.
 end
 
 action = ARGV[0]

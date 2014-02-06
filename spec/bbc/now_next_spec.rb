@@ -1,13 +1,13 @@
 # encoding: utf-8
 
-require File.join(File.dirname(__FILE__), "/../spec_helper")
+require File.join(File.dirname(__FILE__), '/../spec_helper')
 
 describe NowNext do
   before(:each) do
     @io = StringIO.new
     @nn = NowNext.new @io
 
-    @nn.stub(:time_now) { Time.at(1391430000) }
+    @nn.stub(:time_now) { Time.at(1_391_430_000) }
   end
 
   after(:each) do
@@ -38,7 +38,7 @@ describe NowNext do
 
     @nn.radio_now
 
-    expect(@io.string).to include "Fearne Cotton"
+    expect(@io.string).to include 'Fearne Cotton'
   end
 
   it "shows what's on radio next" do
@@ -50,7 +50,7 @@ describe NowNext do
     expect(@io.string).to match(/5 hours\s+Radio 5 live sports extra\s+Coming up on 5 live sports extra/)
   end
 
-  it "explains when it fails" do
+  it 'explains when it fails' do
     @nn.stub_chain(:open, :read) { 'corrupt { json' }
 
     expect { @nn.radio_now }.to raise_error('Unable to download radio schedules')

@@ -2,27 +2,27 @@
 require 'auntie'
 
 channels = {
-  :one => { :id => 'radio1', :region => '/england' },
-  :onextra => { :id => '1xtra' },
-  :two => { :id => 'radio2' },
-  :three => { :id => 'radio3' },
-  :four => { :id => 'radio4', :region => '/fm' },
-  :fourextra => { :id => 'radio4extra' },
-  :five => { :id => '5live' },
-  :six => { :id => '6music' },
-  :asian => { :id => 'asiannetwork' },
-  :worldservice => { :id => 'worldserviceradio' }
+  one: { id: 'radio1', region: '/england' },
+  onextra: { id: '1xtra' },
+  two: { id: 'radio2' },
+  three: { id: 'radio3' },
+  four: { id: 'radio4', region: '/fm' },
+  fourextra: { id: 'radio4extra' },
+  five: { id: '5live' },
+  six: { id: '6music' },
+  asian: { id: 'asiannetwork' },
+  worldservice: { id: 'worldserviceradio' }
 }
 
 channel = ARGV[0] || :one
 
 if ARGV[0] == 'help' && ARGV[1] == '-c'
-  channels.each { |k,v| puts k }
+  channels.each { |k, v| puts k }
   puts "now\nnext"
   exit
 end
 
-if ['help', '-h', '--help'].include? ARGV[0]
+if %w( help -h --help).include? ARGV[0]
   puts 'Useage: radio [station]'
   exit
 end
@@ -37,12 +37,12 @@ if ARGV[0] == 'next'
   exit
 end
 
-if channels.has_key? channel.to_sym
+if channels.key? channel.to_sym
 
   selection = channels[channel.to_sym]
 
-  if ['yesterday', 'today', 'tomorrow'].include? ARGV[1]
-    selection[:period] = '/'+ARGV[1]
+  if %w(yesterday today tomorrow).include? ARGV[1]
+    selection[:period] = '/' + ARGV[1]
   end
 
   Schedule.new.load selection

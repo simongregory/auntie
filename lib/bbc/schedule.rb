@@ -6,13 +6,13 @@
 # http://www.bbc.co.uk/ontologies/programmes/2009-09-07.shtml
 
 class Schedule
-  include ShellColors
+  include ShellColors, Timings
 
-  def initialize(io=STDOUT)
+  def initialize(io = STDOUT)
     @io = io
   end
 
-  def load channel
+  def load(channel)
     station = channel[:id]
     region = channel[:region] ||= ''
     period = channel[:period] ||= ''
@@ -24,7 +24,7 @@ class Schedule
     list data, period
   end
 
-  def list data, period
+  def list(data, period)
     now = time_now
 
     data['schedule']['day']['broadcasts'].each do |e|
@@ -33,14 +33,14 @@ class Schedule
       next if ends < now unless period == '/yesterday'
 
       title = e['programme']['display_titles']['title']
-      #synopsis = e['programme']['short_synopsis']
+      # synopsis = e['programme']['short_synopsis']
 
       starts = Time.parse(e['start'])
 
-      starts_at = starts.strftime("%H:%M") # "%I:%M%P"
+      starts_at = starts.strftime('%H:%M') # "%I:%M%P"
       desc = "#{starts_at} #{title}"
 
-      if (starts < now) && (ends > now)
+      if starts < now && ends > now
         desc = light_green desc
       end
 

@@ -3,7 +3,7 @@
 class Location
   include ShellColors
 
-  def initialize(io=STDOUT)
+  def initialize(io = STDOUT)
     @io = io
   end
 
@@ -21,10 +21,10 @@ class Location
 
   def load(place)
     begin
-     raw = open(url(place), 'UserAgent' => AUNTIE::USER_AGENT).read
-     data = JSON.parse(raw)
+      raw = open(url(place), 'UserAgent' => AUNTIE::USER_AGENT).read
+      data = JSON.parse(raw)
     rescue
-      raise "Unable to download location data"
+      raise 'Unable to download location data'
     end
 
     @io.print "\r"
@@ -32,13 +32,13 @@ class Location
     if data.empty?
       @io.puts "No locations found matching '#{place}'   "
     else
-      @io.puts sprintf "%-42s %-10s", 'Place', 'ID'
+      @io.puts sprintf '%-42s %-10s', 'Place', 'ID'
       data.each do |e|
         name = e['fullName'].split(',')
-        place = light_green(name[0]+ ',') + green(name[1])
+        place = light_green(name[0] + ',') + green(name[1])
         id = cyan e['id']
 
-        @io.puts sprintf "%-60s %-10s", place, id
+        @io.puts sprintf '%-60s %-10s', place, id
       end
     end
   end

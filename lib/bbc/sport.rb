@@ -3,17 +3,17 @@
 class Sport
   include ShellColors
 
-  def initialize(io=STDOUT)
+  def initialize(io = STDOUT)
     @io = io
   end
 
   def headlines
-    data['entries'].each { |item|
+    data['entries'].each do |item|
       prompt = yellow item['prompt'].capitalize.ljust(22)
 
       headline = item['headline']
-      @io.puts prompt+headline
-    }
+      @io.puts prompt + headline
+    end
   end
 
   private
@@ -24,11 +24,10 @@ class Sport
 
   def data
     begin
-     raw = open(url, 'UserAgent' => AUNTIE::USER_AGENT).read
-     JSON.parse(raw)
+      raw = open(url, 'UserAgent' => AUNTIE::USER_AGENT).read
+      JSON.parse(raw)
     rescue
-      @io.puts "Unable to download sport"
-      exit
+      raise 'Unable to download sport data'
     end
   end
 
