@@ -3,3 +3,5 @@ tmp
 *.gem
 *scratch*
 NOTES
+coverage
+.coveralls.yml
