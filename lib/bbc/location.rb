@@ -18,7 +18,8 @@ class Location
   end
 
   def url(term)
-    "http://www.bbc.co.uk/locator/default/en-GB/autocomplete.json?search=#{URI::encode(term)}&filter=domestic&ptrt=/"
+    escaped = URI.encode(term)
+    "http://www.bbc.co.uk/locator/default/en-GB/autocomplete.json?search=#{escaped}&filter=domestic&ptrt=/"
   end
 
   def load(place)

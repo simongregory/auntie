@@ -62,7 +62,6 @@ class NowNext
   def on_next
     programmes = []
 
-    first = 9
     second = 0
 
     @data['blocklist'].each do |e|
@@ -83,7 +82,7 @@ class NowNext
     programmes.sort_by! { |p| p.starts }
 
     programmes.each do |p|
-      @io.puts sprintf "%-#{first}s %-#{second}s %s", p.starts_in, p.channel, p.title
+      @io.puts sprintf("%-9s %-#{second}s %s", p.starts_in, p.channel, p.title)
     end
   end
 
