@@ -6,7 +6,7 @@
 #
 # http://www.bbc.co.uk/programmes/developers
 # http://www.bbc.co.uk/ontologies/programmes/2009-09-07.shtml
-
+#
 class Schedule
   include ShellColors, Timings
 
@@ -42,9 +42,8 @@ class Schedule
       starts_at = starts.strftime('%H:%M') # "%I:%M%P"
       desc = "#{starts_at} #{title}"
 
-      if starts < now && ends > now
-        desc = light_green desc
-      end
+      on_now = (starts < now && ends > now)
+      desc = light_green desc if on_now
 
       @io.puts desc
     end

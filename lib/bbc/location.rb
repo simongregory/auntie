@@ -10,7 +10,7 @@ class Location
   end
 
   def find(place)
-    raise 'Please use a longer search term' if place.length < 3
+    fail 'Please use a longer search term' if place.length < 3
 
     @io.print "Searching for #{place}..."
 

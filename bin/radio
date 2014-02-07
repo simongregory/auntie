@@ -40,10 +40,7 @@ end
 if channels.key? channel.to_sym
 
   selection = channels[channel.to_sym]
-
-  if %w(yesterday today tomorrow).include? ARGV[1]
-    selection[:period] = '/' + ARGV[1]
-  end
+  selection[:period] = '/' + ARGV[1] if %w(yesterday today tomorrow).include? ARGV[1]
 
   Schedule.new.load selection
 else

@@ -10,17 +10,17 @@ class News
   def load
     cols = console_columns
     @io.puts 'BBC News Headlines'
-    data['entries'].each { |news_item|
+    data['entries'].each do |news_item|
       @io.puts news_item['headline'][0..cols - 1]
-    }
+    end
   end
 
   private
 
   def data
     begin
-     raw = open('http://www.bbc.co.uk/news/10284448/ticker.sjson', 'UserAgent' => AUNTIE::USER_AGENT).read
-     JSON.parse(raw)
+      raw = open('http://www.bbc.co.uk/news/10284448/ticker.sjson', 'UserAgent' => AUNTIE::USER_AGENT).read
+      JSON.parse(raw)
     rescue
       raise 'Unable to download news'
     end

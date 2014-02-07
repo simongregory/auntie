@@ -32,5 +32,4 @@ class Sport
       raise 'Unable to download sport data'
     end
   end
-
 end

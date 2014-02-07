@@ -7,7 +7,7 @@
 #
 # And alternatives
 # http://stackoverflow.com/questions/1108767/terminal-color-in-ruby
-
+#
 module ShellColors
   def paint(txt, color)
     "\033[#{color}m#{txt}\033[0m"

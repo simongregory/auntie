@@ -2,7 +2,7 @@
 
 require File.join(File.dirname(__FILE__), '/../spec_helper')
 
-describe ShellCharacters, "character conversion to symbols escaped for terminal output" do
+describe ShellCharacters, 'character conversion to symbols escaped for terminal output' do
   it 'converts cardinal compass points to symbols' do
     points =  %w(N NE E SE S SW W NW)
     symbols = %w(↑ ↗ → ↘ ↓ ↙ ← ↖)
