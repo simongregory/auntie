@@ -2,8 +2,8 @@
 
 require File.join(File.dirname(__FILE__), '/../spec_helper')
 
-describe ShellCharacters do
-  it 'converts compass points to symbols that can be printed in the shell' do
+describe ShellCharacters, "character conversion to symbols escaped for terminal output" do
+  it 'converts cardinal compass points to symbols' do
     points =  %w(N NE E SE S SW W NW)
     symbols = %w(↑ ↗ → ↘ ↓ ↙ ← ↖)
 
@@ -12,7 +12,16 @@ describe ShellCharacters do
     end
   end
 
-  it 'maps fractional compass points up or down' do
+  it 'converts ordinal compass points to symbols' do
+    points =  %w(NE SE  SW  NW)
+    symbols = %w(↗  ↘  ↙  ↖)
+
+    points.zip(symbols).each do |p, s|
+      expect(ShellCharacters.symbol_for_compass(p)).to eq(s)
+    end
+  end
+
+  it 'rounds secondary intercardinal points to the closest cardinal' do
     points =  %w(NNE ENE ESE SSE SSW WSW WNW NNW)
     symbols = %w( ↑   →   →   ↓   ↓   ←   ←   ↑)
 
