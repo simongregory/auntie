@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+# Shows schedule information for BBC Television and Radio stations
+#
 # Helpful urls
 #
 # http://www.bbc.co.uk/programmes/developers

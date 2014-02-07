@@ -1,8 +1,10 @@
 # encoding: utf-8
 
+# Outputs the input in technicolour, for a happier terminal.
+#
 # Useful list of colour codes
 # http://misc.flogisoft.com/bash/tip_colors_and_formatting
-
+#
 # And alternatives
 # http://stackoverflow.com/questions/1108767/terminal-color-in-ruby
 

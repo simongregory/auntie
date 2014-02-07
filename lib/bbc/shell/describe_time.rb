@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+# Collection of time related methods awaiting a relevantly named module.
+#
 module Timings
   def how_long_between(past, future)
     a = (future - past).to_i

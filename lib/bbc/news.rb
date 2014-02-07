@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+# Provides a list of the latest BBC News headlines
+#
 class News
   def initialize(io = STDOUT)
     @io = io

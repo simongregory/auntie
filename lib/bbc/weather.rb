@@ -1,5 +1,8 @@
 # encoding: utf-8
 
+# Lists BBC weather for the requested location
+#
+#
 class Weather
   include ShellCharacters, ShellColors
 

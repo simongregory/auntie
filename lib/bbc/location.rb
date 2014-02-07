@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+# Discovers BBC location ids
+#
 class Location
   include ShellColors
 

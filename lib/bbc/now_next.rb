@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+# Lists what is airing now and next accross BBC Radio and Television stations
+#
 class NowNext
   include Timings
 

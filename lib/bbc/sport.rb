@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+# Lists the latest BBC Sport headlines
+#
 class Sport
   include ShellColors
 

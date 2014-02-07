@@ -1,7 +1,9 @@
 # encoding: utf-8
 
+# Easy output of characters in your terminal
+#
 # http://www.utf8-chartable.de/unicode-utf8-table.pl
-
+#
 module ShellCharacters
   def west
     "\xe2\x86\x90"
