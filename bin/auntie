@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+SAY_HELLO=<<EOM
+auntie is a collection of tools for accessing BBC Weather, TV, Radio, News and Sport
+
+Useage:
+
+weather      # lists the weather for the next 24 hours
+
+tv           # what is on BBC One today
+tv two       # what is on BBC Two today
+tv now       # list of all programmes being broadcast on tv now
+tv next      # list of all programmes being broadcast on tv next
+
+radio        # what is on Radio 1 today
+radio six    # what is on Radio Six Music
+radio now    # what is on the wireless now
+radio next   # what is on the wireless next
+
+news         # the latest news headlines
+
+sport        # the latest sport headlines
+
+EOM
+
+puts SAY_HELLO

@@ -23,9 +23,9 @@ A Ruby Gem for accessing [BBC]() Weather, TV, Radio, News and Sport feeds.
     radio        # what is on Radio 1 today
     radio next   # what is on the wireless next
     radio six    # what is on Radio Six Music
-    
+
     news         # the latest news headlines
-    
+
     sport        # the latest sport headlines
 
 ## zsh integration
